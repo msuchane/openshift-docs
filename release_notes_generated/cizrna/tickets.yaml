@@ -1,3 +1,5 @@
+# Bugzilla tickets.
 - [BZ, search: 'bug_status=VERIFIED&bug_status=CLOSED&classification=Red Hat&columnlist=bug_id%2Cshort_desc%2Ccomponent%2Ccf_release_notes&f1=component&f2=version&f3=cf_doc_type&f4=cf_doc_type&f5=cf_release_notes&known_name=not_closed_os_bugs&list_id=13076961&o1=notequals&o2=notsubstring&o3=notequals&o4=notequals&o5=allwords&order=component%2C summary%2C id%2C &product=OpenShift Container Platform&query_based_on=not_closed_os_bugs&query_format=advanced&resolution=---&resolution=CURRENTRELEASE&resolution=ERRATA&resolution=UPSTREAM&target_release=4.12.0&v1=Documentation&v2=4.12&v3=If docs needed%2C set a value&v4=No Doc Update&v5=*']
 
-
+# Jira tickets. Currently disabled because they're missing doc fields.
+# - [Jira, search: 'filter = 12404639']
