@@ -1,0 +1,6 @@
+[appendix, id="revision_history"]
+= Revision history
+
+`0.0-1`:: Fri Jan 20, 2023, Marek Suchánek (msuchane@redhat.com)
+
+* Initial version of the document.

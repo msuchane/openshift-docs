@@ -1,0 +1,21 @@
+[preface]
+[id="proc_providing-feedback-on-red-hat-documentation"]
+= Providing feedback on Red Hat documentation
+
+We appreciate your input on our documentation. Let us know how we can improve it.
+
+* Submitting comments on specific passages
++
+. View the documentation in the *Multi-page HTML* format and ensure that you see the *Feedback* button in the upper right corner after the page fully loads. 
+. Use your cursor to highlight the part of the text that you want to comment on.
+. Click the *Add Feedback* pop-up that appears near the highlighted text.
+. Add your feedback and click *Submit*.
+
+* Submitting feedback through Bugzilla (action required):
++
+. Log in to the link:https://bugzilla.redhat.com/enter_bug.cgi?product=Red%20Hat%20Enterprise%20Linux%209[Bugzilla] website.
+. Select the correct version from the *Version* menu.
+. Enter a descriptive title in the *Summary* field.
+. Click *Submit Bug*.
+
+// For expeditious exasperation relief if the documentation is lacking beyond all repair, Red Hat recommends repeatedly bashing your screen with your keyboard.

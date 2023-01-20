@@ -1,0 +1,52 @@
+[appendix]
+= List of tickets by component
+
+Bugzilla and JIRA tickets are listed in this document for reference. Tickets that are publicly accessible include a link to the ticket.
+
+[cols="1,2", options="header"]
+|===
+| Component | Tickets
+
+| `Build` | xref:BZ-2099991[Bugzilla:2099991]
+
+| `CNF Platform Validation` | xref:BZ-2051443[Bugzilla:2051443]
+
+| `Cloud Compute` | xref:BZ-1997396[Bugzilla:1997396], xref:BZ-2001027[Bugzilla:2001027], xref:BZ-2056387[Bugzilla:2056387], xref:BZ-2060068[Bugzilla:2060068], xref:BZ-2062579[Bugzilla:2062579], xref:BZ-2085390[Bugzilla:2085390], xref:BZ-2087981[Bugzilla:2087981], xref:BZ-2098054[Bugzilla:2098054], xref:BZ-2101736[Bugzilla:2101736], xref:BZ-2102383[Bugzilla:2102383], xref:BZ-2104373[Bugzilla:2104373], xref:BZ-2106733[Bugzilla:2106733], xref:BZ-2108647[Bugzilla:2108647], xref:BZ-2111467[Bugzilla:2111467], xref:BZ-2111474[Bugzilla:2111474], xref:BZ-2115090[Bugzilla:2115090]
+
+| `Compliance Operator` | xref:BZ-2060726[Bugzilla:2060726], xref:BZ-2094382[Bugzilla:2094382], xref:BZ-2098581[Bugzilla:2098581], xref:BZ-2102511[Bugzilla:2102511], xref:BZ-2117268[Bugzilla:2117268]
+
+| `Dev Console` | xref:BZ-2071792[Bugzilla:2071792], xref:BZ-2089221[Bugzilla:2089221]
+
+| `File Integrity Operator` | xref:BZ-2101393[Bugzilla:2101393], xref:BZ-2104897[Bugzilla:2104897], xref:BZ-2108475[Bugzilla:2108475], xref:BZ-2109153[Bugzilla:2109153], xref:BZ-2112394[Bugzilla:2112394], xref:BZ-2115821[Bugzilla:2115821]
+
+| `Image Registry` | xref:BZ-2055620[Bugzilla:2055620], xref:BZ-2093440[Bugzilla:2093440]
+
+| `Installer` | xref:BZ-1944365[Bugzilla:1944365], xref:BZ-2055247[Bugzilla:2055247], xref:BZ-2076646[Bugzilla:2076646], xref:BZ-2095323[Bugzilla:2095323], xref:BZ-2097691[Bugzilla:2097691], xref:BZ-2098299[Bugzilla:2098299], xref:BZ-2102324[Bugzilla:2102324], xref:BZ-2103144[Bugzilla:2103144], xref:BZ-2103236[Bugzilla:2103236], xref:BZ-2105341[Bugzilla:2105341], xref:BZ-2109388[Bugzilla:2109388]
+
+| `Machine Config Operator` | xref:BZ-2034883[Bugzilla:2034883]
+
+| `Management Console` | xref:BZ-1951901[Bugzilla:1951901], xref:BZ-2037329[Bugzilla:2037329], xref:BZ-2052662[Bugzilla:2052662], xref:BZ-2080260[Bugzilla:2080260], xref:BZ-2084453[Bugzilla:2084453], xref:BZ-2094240[Bugzilla:2094240], xref:BZ-2094502[Bugzilla:2094502], xref:BZ-2096350[Bugzilla:2096350], xref:BZ-2098234[Bugzilla:2098234], xref:BZ-2102098[Bugzilla:2102098]
+
+| `Monitoring` | xref:BZ-2039411[Bugzilla:2039411], xref:BZ-2043518[Bugzilla:2043518], xref:BZ-2083226[Bugzilla:2083226], xref:BZ-2084504[Bugzilla:2084504], xref:BZ-2093892[Bugzilla:2093892], xref:BZ-2099939[Bugzilla:2099939], xref:BZ-2114721[Bugzilla:2114721]
+
+| `Networking` | xref:BZ-2096413[Bugzilla:2096413], xref:BZ-2117524[Bugzilla:2117524]
+
+| `Node` | xref:BZ-1977660[Bugzilla:1977660]
+
+| `OLM` | xref:BZ-2097557[Bugzilla:2097557], xref:BZ-2105045[Bugzilla:2105045]
+
+| `Operator SDK` | xref:BZ-2091864[Bugzilla:2091864]
+
+| `RHCOS` | xref:BZ-1915537[Bugzilla:1915537], xref:BZ-2048789[Bugzilla:2048789], xref:BZ-2049591[Bugzilla:2049591], xref:BZ-2093040[Bugzilla:2093040]
+
+| `Storage` | xref:BZ-2022328[Bugzilla:2022328], xref:BZ-2057637[Bugzilla:2057637], xref:BZ-2080449[Bugzilla:2080449], xref:BZ-2082773[Bugzilla:2082773], xref:BZ-2108473[Bugzilla:2108473]
+
+| `Windows Containers` | xref:BZ-2107261[Bugzilla:2107261]
+
+| `kube-controller-manager` | xref:BZ-2001409[Bugzilla:2001409], xref:BZ-2118286[Bugzilla:2118286]
+
+| `kube-scheduler` | xref:BZ-2100923[Bugzilla:2100923]
+
+| `oc` | xref:BZ-2059125[Bugzilla:2059125], xref:BZ-2095708[Bugzilla:2095708]
+
+|===

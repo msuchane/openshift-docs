@@ -1,0 +1,11 @@
+<title>{ProjectName}</title>
+<subtitle>{Subtitle}</subtitle>
+<productname>{ProductName}</productname>
+<productnumber>{ProductNumber}</productnumber>
+<release>{ProductRelease}</release>
+<abstract><para>{Abstract}</para></abstract>
+<authorgroup>
+  <orgname>{OrgName}</orgname>
+  <orgdiv>{OrgDiv}</orgdiv>
+</authorgroup>
+<xi:include href="Common_Content/Legal_Notice.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />

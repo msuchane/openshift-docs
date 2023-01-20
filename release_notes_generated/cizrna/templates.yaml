@@ -1,0 +1,138 @@
+sections:
+  - &installer
+    title: "Installer and image creation"
+    filter:
+      subsystem: ['ssg_front_door','sst_front_door','sst_installer','sst_image_builder','sst_composer']
+  - &edge
+    title: "RHEL for Edge"
+    filter:
+      subsystem: ['sst_edge', 'sst_rhcos']
+  - &subscription
+    title: "Subscription management"
+    filter:
+      subsystem: ["sst_subscription_manager"]
+  - &software
+    title: "Software management"
+    filter:
+      subsystem: ["sst_cs_software_management"]
+  - &shells
+    title: "Shells and command-line tools"
+    filter:
+      subsystem: ['sst_cs_system_management', 'sst_cs_plumbers']
+  - &infrastructure
+    title: "Infrastructure services"
+    filter:
+      subsystem: ['sst_cs_infra_services', 'ssg_core_services']
+  - &security
+    title: "Security"
+    filter:
+      subsystem: ['sst_platform_security', 'sst_security_crypto', 'sst_security_readiness', 'sst_security_selinux', 'sst_security_compliance', 'sst_security_special_projects', 'ssg_security']
+  - &networking
+    title: "Networking"
+    filter:
+      subsystem: ['sst_networking']
+  - &kernel
+    title: "Kernel"
+    filter:
+      subsystem: ['sst_kernel_maintainers', 'sst_kernel_generalists', 'sst_kernel_ft', 'sst_kexec_kdump', 'sst_kernel_trace', 'sst_kernel_tps', 'sst_kernel_debug', 'sst_kernel_sustaining', 'sst_core_kernel', 'sst_kernel_realtime', 'sst_kernel_rats', 'sst_kernel_rts', 'sst_kernel_security', 'sst_arch_hw', 'sst_nic_rdma']
+  - &boot
+    title: "Boot loader"
+    filter:
+      subsystem: ['sst_desktop_firmware_bootloaders']
+  - &hardware
+    title: "Hardware enablement"
+    filter:
+      subsystem: ['sst_platform_enablement']
+  - &storage
+    title: "File systems and storage"
+    filter:
+      subsystem: ['sst_platform_storage', 'sst_filesystems', 'ssg_filesystems_and_storage', 'sst_storage_management', 'sst_logical_storage', 'sst_storage_io']
+  - &clusters
+    title: "High availability and clusters"
+    filter:
+      subsystem: ['sst_high_availability']
+  - &languages
+    title: "Dynamic programming languages, web and database servers"
+    filter:
+      subsystem: ['sst_cs_apps', 'sst_cs_stacks']
+  - &compilers
+    title: "Compilers and development tools"
+    filter:
+      subsystem: ['sst_platform_tools', 'ssg_platform_tools', 'sst_pt_gcc_glibc', 'sst_pt_perf_debug', 'sst_pt_llvm_rust_go', 'sst_pt_pcp', 'sst_dotnet_java']
+  - &idm
+    title: "Identity Management"
+    filter:
+      subsystem: ['sst_identity_management', 'ssg_idm', 'sst_idm_ipa', 'sst_idm_sssd', 'sst_idm_ds', 'sst_idm_cs', 'sst_idm_ocp', 'sst_idm_ops']
+  - &sssd
+    title: "SSSD"
+    filter:
+      subsystem: ['sst_sssd']
+  - &desktop
+    title: "Desktop"
+    filter:
+      subsystem: ['sst_desktop', 'sst_desktop_applications', 'sst_desktop_platform_technologies', 'sst_i18n']
+  - &graphics
+    title: "Graphics infrastructures"
+    filter:
+      subsystem: ['sst_gpu', 'sst_graphics_infrastructure']
+  - &cockpit
+    title: "The web console"
+    filter:
+      subsystem: ['sst_cockpit']
+  - &system_roles
+    title: "Red Hat Enterprise Linux System Roles"
+    filter:
+      subsystem: ['sst_system_roles', 'sst_sap']
+  - &virtualization
+    title: "Virtualization"
+    filter:
+      subsystem: ['sst_virtualization', 'ssg_virtualization', 'sst_virtualization_advanced', 'sst_virtualization_windows', 'sst_virtualization_networking','sst_virtualization_spice', 'sst_virtualization_storage', 'sst_virtualization_hwe']
+  - &cloud
+    title: "RHEL in cloud environments"
+    filter:
+      subsystem: ['sst_virtualization_cloud']
+  - &supportability
+    title: "Supportability"
+    filter:
+      subsystem: ['sst_cee_supportability']
+  - &containers
+    title: "Containers"
+    filter:
+      subsystem: ['sst_container_tools']
+
+
+chapters:
+  - title: "New features"
+    intro_abstract: "This part describes new features and major enhancements introduced in {ProductName}{nbsp}{ProductNumber}."
+    filter:
+      doc_type: ["Enhancement", "Release Note"]
+  - title: "Bug fixes"
+    intro_abstract: "This part describes bugs fixed in {ProductName}{nbsp}{ProductNumber} that have a significant impact on users."
+    filter:
+      doc_type: ["Bug Fix"]
+  - title: "Technology Previews"
+    intro_abstract: |
+      This part provides a list of all Technology Previews available in {ProductName}{nbsp}9.
+
+      For information on Red Hat scope of support for Technology Preview features, see link:https://access.redhat.com/support/offerings/techpreview/[Technology Preview Features Support Scope].
+    filter:
+      doc_type: ["Technology Preview"]
+  - title: "Deprecated functionality"
+    intro_abstract: |
+       This part provides an overview of functionality that has been _deprecated_ in {ProductName}{nbsp}9.
+
+       Deprecated functionality will likely not be supported in future major releases of this product and is not recommended for new deployments. For the most recent list of deprecated functionality within a particular major release, refer to the latest version of release documentation.
+
+       The support status of deprecated functionality remains unchanged within {ProductName}{nbsp}9. For information about the length of support, see link:https://access.redhat.com/support/policy/updates/errata[Red Hat Enterprise Linux Life Cycle] and link:https://access.redhat.com/support/policy/updates/rhel-app-streams-life-cycle[Red Hat Enterprise Linux Application Streams Life Cycle].
+
+       Deprecated hardware components are not recommended for new deployments on the current or future major releases. Hardware driver updates are limited to security and critical fixes only. Red Hat recommends replacing this hardware as soon as reasonably feasible.
+
+       A package can be deprecated and not recommended for further use. Under certain circumstances, a package can be removed from a product. Product documentation then identifies more recent packages that offer functionality similar, identical, or more advanced to the one deprecated, and provides further recommendations.
+
+       For information regarding functionality that is present in RHEL 8 but has been _removed_ in RHEL 9, see link:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html-single/considerations_in_adopting_rhel_9/[Considerations in adopting RHEL 9].
+    filter:
+      doc_type: ["Deprecated Functionality"]
+  - title: "Known issues"
+    intro_abstract: "This part describes known issues in {ProductName}{nbsp}{ProductNumber}."
+    filter:
+      doc_type: ["Known Issue"]

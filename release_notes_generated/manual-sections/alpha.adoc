@@ -1,0 +1,5 @@
+[preface]
+[id="alpha-warning"]
+= This is an alpha version!
+
+This document is only provided as a preview. It is under development and is subject to substantial change. Consider the included information incomplete and use it with caution.

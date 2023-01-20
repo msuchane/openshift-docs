@@ -1,0 +1,14 @@
+[id="known-issues"]
+= Known issues
+
+This part describes known issues in {ProductName}{nbsp}{ProductNumber}.
+
+
+[id="BZ-2056387"]
+Unclear status, see https://bugzilla.redhat.com/show_bug.cgi?id=2056387#c41
+
+Proposed doc text:
+
+* When scaling up an Alibaba Cloud cluster with {op-system-base} compute nodes, the new nodes show as `Ready`, but the Ingress pods do not transition to `Running` on these nodes. As a result, the scale-up operation does not succeed. As a workaround, you can perform a scale-up operation with {op-system} compute nodes. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2056387[*BZ#2056387*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2056387[Bugzilla:2056387]) | jrouth@redhat.com | Done | link:https://bugzilla.redhat.com/show_bug.cgi?id=2056387[]

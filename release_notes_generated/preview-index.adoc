@@ -1,0 +1,8 @@
+include::attributes.adoc[]
+
+= Preview: {ProjectName}
+
+* link:internal.html[Internal preview]
+* link:external.html[External preview]
+* link:status-table.html[Status table]
+

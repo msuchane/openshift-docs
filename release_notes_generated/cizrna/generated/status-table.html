@@ -1,0 +1,2860 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Release notes (RN) status for OpenShift Container Platform; release no releases</title>
+    <meta http-equiv='Content-type' content='text/html; charset=utf-8'/>
+    <meta name='Author' content='Marek Suchánek' />
+    <meta name='Generator' content='Cizrna (CoRN 4)' />
+    <style type='text/css'>
+      body {
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        font-family: "Source Sans Pro", "Cantarell", "San Francisco", "Lucida Grande", "Trebuchet MS", "DejaVu Sans", "Sans";
+        font-size: 16px;
+      }
+      p {
+        line-height: 1.2em;
+      }
+      h1 {
+        margin: 0.2em 0em 0.2em 0em;
+      }
+      #subtitle {
+        font-size: 1.2em;
+        margin-top: 0em;
+      }
+      table, th, td {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        padding: 0.5em;
+      }
+      th {
+        font-size: 1.2em;
+        color: #444;
+        background-color: #eee;
+      }
+      /* Sortable tables */
+      table.sortable thead {
+        cursor: pointer;
+      }
+      /* Striped rows and columns, blending background colors */
+      /* Let's not shade rows because of filtering */
+      /*
+      tbody tr:nth-child(even) {
+        background-color: #f8f8f8;
+        mix-blend-mode: multiply;
+      }
+      */
+      tr td:nth-child(even) {
+        background-color: #f8f8f8;
+        mix-blend-mode: multiply;
+      }
+      /* table filter */
+      #table-filter {
+        width: 20em;
+        font-size: 1em;
+        padding: 0.5em 1em 0.5em 1em;
+        margin: 0px;
+        border: 1px solid #ddd;
+      }
+      #header {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 1em;
+        color: #444;
+      }
+      /* frame that reports complete/incomplete numbers. Intentionally similar to the filter */
+      #completeness {
+        font-size: 1em;
+        padding: 0.5em 1em 0.5em 1em;
+        margin: 0px;
+        border: 1px solid #ddd;
+        background-color: #f8f8f8;
+      }
+      #table-container {
+        overflow: scroll;
+        /* Max height calculated relative to the viewport (browser screen) */
+        max-height: 75vh;
+      }
+      #footer {
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="header">
+      <div>
+      <h1>Release notes status</h1>
+      <p id="subtitle">for OpenShift Container Platform; release no releases.</p>
+      </div>
+
+      <div id="completeness">
+      84 release notes:<br />
+      <span style="color: green;">0 (0%)</span> complete,<br />
+      <span style="color: orange;">0 (0%)</span> warnings,<br />
+      <span style="color: red;">84 (100%)</span> incomplete.
+      </div>
+
+      <!-- Duplicated tickets: Replace with references? -->
+      <!--
+      <% (when duplicated-tickets %>
+      <h2>Duplicated tickets:</h2>
+      <%= duplicated-tickets %>
+      <% ) %>
+      -->
+
+      <input type="search" class="light-table-filter" id="table-filter" data-table="order-table" placeholder="Filter the table…">
+    </div>
+
+    <!-- For reference, the original styling of the table -->
+    <!--
+    <table class='table table-condensed table-hover table-bordered sortable'>
+    -->
+    <div id="table-container">
+    <table id="status-table" class="sortable order-table table">
+
+      <!-- Table header -->
+      <thead>
+      <tr>
+        <th>Bug ID</th>
+        <th>Overall status</th>
+        <th>Doc type</th>
+        <th>Doc status</th>
+        <th>Bug status</th>
+        <th>Docs contact</th>
+        <th>Assignee</th>
+        <th>Target releases</th>
+        <th>Priority</th>
+        <th>Subsystem(s)</th>
+        <th>Component(s)</th>
+        <th>RN title &amp; text</th>
+        <th>Labels or flags</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2111842" title="vSphere test failure: [Serial] [sig-auth][Feature:OAuthServer] [RequestHeaders] [IdP] test RequestHeaders IdP [Suite:openshift/conformance/serial]">Bugzilla:2111842</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text. RN not approved.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">WIP</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>kostrows</td>
+        <td>No releases</td>
+        <td>high</td>
+        <td>Invalid subsystems</td>
+        <td>apiserver-auth</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: ?, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2099991" title="pass the &quot;--quiet&quot; option via the buildconfig for s2i">Bugzilla:2099991</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>cdaley</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>Build</td>
+        <td style="color: red">Missing title.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1997396" title="No alerts have triggered for CPU and Memory limit with Cluster Autoscaler">Bugzilla:1997396</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>mimccune</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>Cloud Compute</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2001027" title="ClusterAutoscaler with balanceSimilarNodeGroups does not scale even across MachineSet">Bugzilla:2001027</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>mimccune</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>Cloud Compute</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2056387" title="[IPI on Alibabacloud][RHEL scaleup] new RHEL worker were not added into the backend of Ingress SLB automatically">Bugzilla:2056387</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Known Issue</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>brlu</td>
+        <td>No releases</td>
+        <td>high</td>
+        <td>Invalid subsystems</td>
+        <td>Cloud Compute</td>
+        <td style="color: red">Missing title.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, needinfo: ?, needinfo: ?, requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2060068" title="machine-api-provider-aws creates EC2 instances with the default security group when no matching security group is found">Bugzilla:2060068</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>mfedosin</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>Cloud Compute</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: -, requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2062579" title="[IBMCloud] Provide invalid profile machine stuck in &quot;Provisioning&quot; phase">Bugzilla:2062579</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>cschaefe</td>
+        <td>No releases</td>
+        <td>low</td>
+        <td>Invalid subsystems</td>
+        <td>Cloud Compute</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2085390" title="machine-controller is case sensitive which can lead to false/positive errors">Bugzilla:2085390</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>mfedosin</td>
+        <td>No releases</td>
+        <td>low</td>
+        <td>Invalid subsystems</td>
+        <td>Cloud Compute</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, needinfo: ?, requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2087981" title="PowerOnVM_Task is deprecated use PowerOnMultiVM_Task for DRS ClusterRecommendation">Bugzilla:2087981</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>dmoiseev</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>Cloud Compute</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: -, requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2098054" title="The control plane should tag AWS security groups at creation">Bugzilla:2098054</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Enhancement</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>mfedosin</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>Cloud Compute</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2101736" title="Finalizers can&#x27;t be removed for machines">Bugzilla:2101736</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>mfedosin</td>
+        <td>No releases</td>
+        <td>high</td>
+        <td>Invalid subsystems</td>
+        <td>Cloud Compute</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: -, requires_doc_text: +, blocker: ?</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2102383" title="Kube controllers crash when nodes are shut off in OpenStack">Bugzilla:2102383</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>mbooth</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>Cloud Compute</td>
+        <td style="color: red">Missing title.</td>
+        <td style="font-size: 0.7em;">qe_test_coverage: ?, requires_doc_text: +, blocker: ?</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2104373" title="[AWS] CCM cannot work on Commercial Cloud Services (C2S) Top Secret Region">Bugzilla:2104373</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>dmoiseev</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>Cloud Compute</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2106733" title="Machine Controller stuck with Terminated Instances while Provisioning on AWS">Bugzilla:2106733</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>rmanak</td>
+        <td>No releases</td>
+        <td>high</td>
+        <td>Invalid subsystems</td>
+        <td>Cloud Compute</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2108647" title="[azure] Standard_D2s_v3 as worker failed by “accelerated networking not supported on instance type”">Bugzilla:2108647</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>rmanak</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>Cloud Compute</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2111467" title="Node internal DNS address is not set for machine">Bugzilla:2111467</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>kabhat</td>
+        <td>No releases</td>
+        <td>unspecified</td>
+        <td>Invalid subsystems</td>
+        <td>Cloud Compute</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2111474" title="Fetch internal IPs of vms from dhcp server">Bugzilla:2111474</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>kabhat</td>
+        <td>No releases</td>
+        <td>unspecified</td>
+        <td>Invalid subsystems</td>
+        <td>Cloud Compute</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2115090" title="[IBMCloud][OVN] Install fails, worker machines stuck in Provisioned &quot;has no node yet&quot;">Bugzilla:2115090</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>cschaefe</td>
+        <td>No releases</td>
+        <td>low</td>
+        <td>Invalid subsystems</td>
+        <td>Cloud Compute</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, requires_doc_text: +, blocker: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2051443" title="OSLAT runner uses both sibling threads causing latency spikes">Bugzilla:2051443</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">VERIFIED</td>
+        <td>Missing docs contact</td>
+        <td>titzhak</td>
+        <td>No releases</td>
+        <td>unspecified</td>
+        <td>Invalid subsystems</td>
+        <td>CNF Platform Validation</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +, blocker: ?</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2060726" title="Compliance operator does not generate alert notification for non-control namespace">Bugzilla:2060726</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>mrogers</td>
+        <td>No releases</td>
+        <td>low</td>
+        <td>Invalid subsystems</td>
+        <td>Compliance Operator</td>
+        <td style="color: red">Missing title.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2094382" title="Auto remediation does not work for rules rhcos4-high-master-sysctl-kernel-yama-ptrace-scope and rhcos4-sysctl-kernel-core-pattern">Bugzilla:2094382</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>wenshen</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>Compliance Operator</td>
+        <td style="color: red">Missing title.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2098581" title="APIRemovedInNextEUSReleaseInUse alert fired for openshift-compliance cronjobs">Bugzilla:2098581</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>mrogers</td>
+        <td>No releases</td>
+        <td>low</td>
+        <td>Invalid subsystems</td>
+        <td>Compliance Operator</td>
+        <td style="color: red">Missing title.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2102511" title="[OSD] mcp puase status stuck at true issue as Compliance Operator failed to check if kubeletconfig custom-kubelet is subset of rendered MC 99-worker-generated-kubelet">Bugzilla:2102511</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>wenshen</td>
+        <td>No releases</td>
+        <td>high</td>
+        <td>Invalid subsystems</td>
+        <td>Compliance Operator</td>
+        <td style="color: red">Missing title.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2117268" title="ocp4-pci-dss-api-checks-pod in CrashLoopBackoff state due to ignition spec.config not in MC">Bugzilla:2117268</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>jhrozek</td>
+        <td>No releases</td>
+        <td>high</td>
+        <td>Invalid subsystems</td>
+        <td>Compliance Operator</td>
+        <td style="color: red">Missing title.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2071792" title="Non-kubeadmin user will not have access to openshift-config ns to pull secret/CM for adding private HCR in a namespace">Bugzilla:2071792</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>ssiddhar</td>
+        <td>kmamgain</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>Dev Console</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2089221" title="Could not de-select a Git Secret in add and edit forms">Bugzilla:2089221</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>ssiddhar</td>
+        <td>akundu</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>Dev Console</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2101393" title="NodeHasIntegrityFailure alert doesn&#x27;t set namespace label">Bugzilla:2101393</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>jhrozek</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>File Integrity Operator</td>
+        <td style="color: red">Missing title.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2104897" title="Failed to create Fileintegrity object in a namespace without openshift prefix">Bugzilla:2104897</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>mrogers</td>
+        <td>No releases</td>
+        <td>high</td>
+        <td>Invalid subsystems</td>
+        <td>File Integrity Operator</td>
+        <td style="color: red">Missing title.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2108475" title="Unable to upgrade file integrity operator using catalog source">Bugzilla:2108475</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>mrogers</td>
+        <td>No releases</td>
+        <td>high</td>
+        <td>Invalid subsystems</td>
+        <td>File Integrity Operator</td>
+        <td style="color: red">Missing title.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, requires_doc_text: +, blocker: ?</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2109153" title="pods for daemonset failed to create after file integrity operator upgrade from v0.1.24 to v0.1.29">Bugzilla:2109153</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>mrogers</td>
+        <td>No releases</td>
+        <td>high</td>
+        <td>Invalid subsystems</td>
+        <td>File Integrity Operator</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2112394" title="NodeHasIntegrityFailure alert doesn&#x27;t set namespace label after upgrade file-integrity-operator from v0.1.24&gt;v0.1.30">Bugzilla:2112394</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>mrogers</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>File Integrity Operator</td>
+        <td style="color: red">Missing title.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2115821" title="FIO Target Down Alert firing">Bugzilla:2115821</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>mrogers</td>
+        <td>No releases</td>
+        <td>high</td>
+        <td>Invalid subsystems</td>
+        <td>File Integrity Operator</td>
+        <td style="color: red">Missing title.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2055620" title="ImageStreamChange triggers using annotations does not work">Bugzilla:2055620</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>obulatov</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>Image Registry</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: -, qe_test_coverage: ?, requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2093440" title="[sig-arch][Early] Managed cluster should start all core operators  - NodeCADaemonControllerDegraded: failed to update object">Bugzilla:2093440</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>obulatov</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>Image Registry</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1944365" title="openstack: missing validation for apiVIP and ingressVIP">Bugzilla:1944365</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>pprinett</td>
+        <td>No releases</td>
+        <td>low</td>
+        <td>Invalid subsystems</td>
+        <td>Installer</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: -, qe_test_coverage: ?, requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2055247" title="[Azure] Fail to create master nodes with dcasv5 /dcadsv5 -series Confidential Virtual Machine">Bugzilla:2055247</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>mpytlak</td>
+        <td>jhixson</td>
+        <td>No releases</td>
+        <td>low</td>
+        <td>Invalid subsystems</td>
+        <td>Installer</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, needinfo: -, needinfo: -, needinfo: -, requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2076646" title="openshift-install destroy unable to delete PVC disks in GCP if cluster identifier is longer than 22 characters">Bugzilla:2076646</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>bbarbach</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>Installer</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">needinfo: ?, needinfo: ?, needinfo: ?, needinfo: ?, needinfo: ?, needinfo: ?, needinfo: ?, requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2095323" title="Openshift on OpenStack does not honor machineNetwork setting with multiple networks">Bugzilla:2095323</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>m.andre</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>Installer</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">qe_test_coverage: ?, requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2097691" title="[vsphere] failed to create cluster if datacenter is embedded in a Folder">Bugzilla:2097691</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>ocp-installer</td>
+        <td>No releases</td>
+        <td>unspecified</td>
+        <td>Invalid subsystems</td>
+        <td>Installer</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">needinfo: -, needinfo: -, requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2098299" title="install-config: Strict unmarshalling conflicts with new fields">Bugzilla:2098299</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>anarayan</td>
+        <td>No releases</td>
+        <td>low</td>
+        <td>Invalid subsystems</td>
+        <td>Installer</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2102324" title="GCP: Panic when unknown region AND machinesets specified in install config">Bugzilla:2102324</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>mpytlak</td>
+        <td>anarayan</td>
+        <td>No releases</td>
+        <td>low</td>
+        <td>Invalid subsystems</td>
+        <td>Installer</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2103144" title="[IPv6] apiVIP and ingressVIP non-equality validation doesn&#x27;t account for synonyms">Bugzilla:2103144</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>pprinett</td>
+        <td>No releases</td>
+        <td>low</td>
+        <td>Invalid subsystems</td>
+        <td>Installer</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">qe_test_coverage: ?, requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2103236" title="GCP: Error message for insufficient permissions needs to be improved">Bugzilla:2103236</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>mpytlak</td>
+        <td>anarayan</td>
+        <td>No releases</td>
+        <td>low</td>
+        <td>Invalid subsystems</td>
+        <td>Installer</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2105341" title="Bootstrap Gather Fails when cluster.tfvars.json is not available in Azure">Bugzilla:2105341</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>mpytlak</td>
+        <td>bbarbach</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>Installer</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2109388" title="[AWS] s3 GetBucketPolicy permission is missing in installer validation">Bugzilla:2109388</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>mpytlak</td>
+        <td>bbarbach</td>
+        <td>No releases</td>
+        <td>unspecified</td>
+        <td>Invalid subsystems</td>
+        <td>Installer</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +, blocker: ?</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2001409" title="All critical alerts should have links to a runbook">Bugzilla:2001409</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Enhancement</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>fkrepins</td>
+        <td>No releases</td>
+        <td>low</td>
+        <td>Invalid subsystems</td>
+        <td>kube-controller-manager</td>
+        <td style="color: red">Missing title.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, needinfo: ?, requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2118286" title="KCMO should not be dependent on monitoring stack">Bugzilla:2118286</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>fkrepins</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>kube-controller-manager</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2100923" title="[SSO] Deleting secondary scheduler CR does not delete the corresponding deployment">Bugzilla:2100923</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>lseveroa</td>
+        <td>No releases</td>
+        <td>low</td>
+        <td>Invalid subsystems</td>
+        <td>kube-scheduler</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2034883" title="MCO does not sync kubeAPIServerServingCAData to controllerconfig if there are not ready nodes">Bugzilla:2034883</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>jrouth</td>
+        <td>jkyros</td>
+        <td>No releases</td>
+        <td>high</td>
+        <td>Invalid subsystems</td>
+        <td>Machine Config Operator</td>
+        <td style="color: red">Missing title.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1951901" title="incorrect Worker nodes number calculated when nodes have both master and worker role">Bugzilla:1951901</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>yapei</td>
+        <td>No releases</td>
+        <td>low</td>
+        <td>Invalid subsystems</td>
+        <td>Management Console</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: -, requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2037329" title="[UI] MultiClusterHub details after it&#x27;s creation starts flickers, disappears and appears back (happened twice)">Bugzilla:2037329</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>opayne</td>
+        <td>rhamilto</td>
+        <td>No releases</td>
+        <td>unspecified</td>
+        <td>Invalid subsystems</td>
+        <td>Management Console</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2052662" title="Opening Insights popup crashes the page">Bugzilla:2052662</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>pakratoc</td>
+        <td>No releases</td>
+        <td>unspecified</td>
+        <td>Invalid subsystems</td>
+        <td>Management Console</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2080260" title="404 not found when create Image Manifest Vulnerability on Operator &quot;Container Security&quot;">Bugzilla:2080260</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>jonjacks</td>
+        <td>No releases</td>
+        <td>unspecified</td>
+        <td>Invalid subsystems</td>
+        <td>Management Console</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2084453" title="Edit PodDisruptionBudget page sometimes takes user to not synced YAML view">Bugzilla:2084453</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>opayne</td>
+        <td>cajieh</td>
+        <td>No releases</td>
+        <td>unspecified</td>
+        <td>Invalid subsystems</td>
+        <td>Management Console</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2094240" title="MachineConfigPool details page should use consistent word for resume updating">Bugzilla:2094240</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>jhadvig</td>
+        <td>No releases</td>
+        <td>unspecified</td>
+        <td>Invalid subsystems</td>
+        <td>Management Console</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2094502" title="Creating an MCH instance does not work via blue button">Bugzilla:2094502</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>opayne</td>
+        <td>sgoodwin</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>Management Console</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2096350" title="Web console doesn&#x27;t display webhook errors for upgrades">Bugzilla:2096350</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>opayne</td>
+        <td>rhamilto</td>
+        <td>No releases</td>
+        <td>urgent</td>
+        <td>Invalid subsystems</td>
+        <td>Management Console</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +, blocker: ?</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2098234" title="Local Update Server link 404">Bugzilla:2098234</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>opayne</td>
+        <td>rhamilto</td>
+        <td>No releases</td>
+        <td>unspecified</td>
+        <td>Invalid subsystems</td>
+        <td>Management Console</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2102098" title="[OSD] There is no error message shown on node label edit modal">Bugzilla:2102098</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>jhadvig</td>
+        <td>No releases</td>
+        <td>unspecified</td>
+        <td>Invalid subsystems</td>
+        <td>Management Console</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2039411" title="Monitoring operator reports unavailable=true while one Prometheus pod is ready">Bugzilla:2039411</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>bburt</td>
+        <td>sthaha</td>
+        <td>No releases</td>
+        <td>high</td>
+        <td>Invalid subsystems</td>
+        <td>Monitoring</td>
+        <td style="color: red">Missing title.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2043518" title="Better message in the CMO degraded/unavailable conditions when pods can&#x27;t be scheduled">Bugzilla:2043518</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>bburt</td>
+        <td>sthaha</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>Monitoring</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2083226" title="alertmanager-main pods failing to start due to startupprobe timeout">Bugzilla:2083226</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>bburt</td>
+        <td>sthaha</td>
+        <td>No releases</td>
+        <td>high</td>
+        <td>Invalid subsystems</td>
+        <td>Monitoring</td>
+        <td style="color: red">Missing title.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2084504" title="can not silent platform alert from developer console">Bugzilla:2084504</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>bburt</td>
+        <td>gbernal</td>
+        <td>No releases</td>
+        <td>low</td>
+        <td>Invalid subsystems</td>
+        <td>Monitoring</td>
+        <td style="color: red">Missing title.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2093892" title="no api_key_file field in AlertmanagerConfig, but error message complains it">Bugzilla:2093892</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>bburt</td>
+        <td>janantha</td>
+        <td>No releases</td>
+        <td>low</td>
+        <td>Invalid subsystems</td>
+        <td>Monitoring</td>
+        <td style="color: red">Missing title.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2099939" title="enabled UWM alertmanager only, user project AlertmanagerConfig is not loaded to UWM alertmanager or platform alertmanager">Bugzilla:2099939</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>bburt</td>
+        <td>jmarcal</td>
+        <td>No releases</td>
+        <td>low</td>
+        <td>Invalid subsystems</td>
+        <td>Monitoring</td>
+        <td style="color: red">Missing title.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2114721" title="telemeter-client pod does not use the updated pull secret when it is changed">Bugzilla:2114721</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>bburt</td>
+        <td>jmarcal</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>Monitoring</td>
+        <td style="color: red">Missing title.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2096413" title="br-ex not created due to default bond interface having a different mac address than expected">Bugzilla:2096413</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>jcaamano</td>
+        <td>No releases</td>
+        <td>urgent</td>
+        <td>Invalid subsystems</td>
+        <td>Networking</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2117524" title="openshift-ingress-operator with mTLS does not download CRL">Bugzilla:2117524</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>rfredette</td>
+        <td>No releases</td>
+        <td>high</td>
+        <td>Invalid subsystems</td>
+        <td>Networking</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">qe_test_coverage: ?, requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1977660" title="the pod events show error codes when crio recreate the missing symlinks">Bugzilla:1977660</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>skclark</td>
+        <td>No releases</td>
+        <td>low</td>
+        <td>Invalid subsystems</td>
+        <td>Node</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2059125" title="The oc binary for mac arm64 can’t be executed">Bugzilla:2059125</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>aguclu</td>
+        <td>No releases</td>
+        <td>high</td>
+        <td>Invalid subsystems</td>
+        <td>oc</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2095708" title="oc adm inspect throws out erorr &quot;the server doesn&#x27;t have a resource type &quot;egressfirewalls&quot; for all operators">Bugzilla:2095708</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>jchaloup</td>
+        <td>No releases</td>
+        <td>unspecified</td>
+        <td>Invalid subsystems</td>
+        <td>oc</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2097557" title="can not upgrade. Incorrect reading of olm.maxOpenShiftVersion">Bugzilla:2097557</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>pegoncal</td>
+        <td>No releases</td>
+        <td>high</td>
+        <td>Invalid subsystems</td>
+        <td>OLM</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2105045" title="OLM updates namespace labels even if they haven&#x27;t changed">Bugzilla:2105045</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>agreene</td>
+        <td>No releases</td>
+        <td>high</td>
+        <td>Invalid subsystems</td>
+        <td>OLM</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: +, requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2091864" title="Registry Pod don&#x27;t have &quot;securityContext.runAsNonRoot=true&quot; config that generated by run bundle">Bugzilla:2091864</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>rgottipa</td>
+        <td>No releases</td>
+        <td>high</td>
+        <td>Invalid subsystems</td>
+        <td>Operator SDK</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=1915537" title="[Metal] sosreport is broken on a second usage from another debug pod for the same node (BareMetal IPI)">Bugzilla:1915537</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>travier</td>
+        <td>No releases</td>
+        <td>high</td>
+        <td>Invalid subsystems</td>
+        <td>RHCOS</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">reviewed-in-sprint: -, needinfo: ?, requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2048789" title="broken toolbox in OCP 4.10 with non-default image">Bugzilla:2048789</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>travier</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>RHCOS</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2049591" title="[RFE] Toolbox - make sure we are running on the latest image?">Bugzilla:2049591</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Enhancement</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>skunkerk</td>
+        <td>No releases</td>
+        <td>low</td>
+        <td>Invalid subsystems</td>
+        <td>RHCOS</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2093040" title="unable to start `toolbox` on RHCOS using `podman` 4.0">Bugzilla:2093040</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>travier</td>
+        <td>No releases</td>
+        <td>high</td>
+        <td>Invalid subsystems</td>
+        <td>RHCOS</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2022328" title="kube-controller unpublishing volume after maxWaitForUnmountDuration leaves block devices on node in a inconsistent state">Bugzilla:2022328</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>jsafrane</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>Storage</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2057637" title="default VolumeSnapshotClass created by the csi-driver-manila-operator does not contain secrets">Bugzilla:2057637</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>gouthamr</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>Storage</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">qe_test_coverage: +, requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2080449" title="[Azure-file CSI Driver] Read/Write permission denied for non-admin user on azure file csi provisioned volume with fsType=ext4,ext3,ext2,xfs">Bugzilla:2080449</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Release Note</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>Missing docs contact</td>
+        <td>rbednar</td>
+        <td>No releases</td>
+        <td>medium</td>
+        <td>Invalid subsystems</td>
+        <td>Storage</td>
+        <td style="color: red">Missing title.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2082773" title="[AWS-EBS-CSI-driver-Operator] Generic ephemeral volumes online resize Filesystem type volume stucked at file system resize phase">Bugzilla:2082773</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>opayne</td>
+        <td>hekumar</td>
+        <td>No releases</td>
+        <td>unspecified</td>
+        <td>Invalid subsystems</td>
+        <td>Storage</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">needinfo: -, requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2108473" title="[vSphere CSI driver operator] CSI controller pod restarting constantly">Bugzilla:2108473</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">CLOSED</td>
+        <td>opayne</td>
+        <td>hekumar</td>
+        <td>No releases</td>
+        <td>unspecified</td>
+        <td>Invalid subsystems</td>
+        <td>Storage</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +</td>
+      </tr>
+      
+      
+      <tr>
+        <td><a href="https://bugzilla.redhat.com/show_bug.cgi?id=2107261" title="[WMCO] WMCO endpoints missing after WMCO restart in vSphere">Bugzilla:2107261</a>
+          <!-- Link to the ticket preview: not yet implemented -->
+          <!--
+          <% (when (:preview-url ticket) %>
+          <br />
+          <a href="<%= (:preview-url ticket) %>">Preview</a>
+          <% ) %>
+          -->
+        </td>
+        <td style="color: red">Bad text.</td>
+        <td>Bug Fix</td>
+        <td style="text-align: center;">Done</td>
+        <td style="color: green">VERIFIED</td>
+        <td>Missing docs contact</td>
+        <td>ssoto</td>
+        <td>No releases</td>
+        <td>high</td>
+        <td>Invalid subsystems</td>
+        <td>Windows Containers</td>
+        <td style="color: red">Text in one paragraph.</td>
+        <td style="font-size: 0.7em;">requires_doc_text: +, blocker: -</td>
+      </tr>
+      
+      </tbody>
+
+    </table>
+    </div>
+
+    <table class="sortable" style="margin-top: 1.5em;">
+      <thead>
+        <th>Docs contact</th>
+        <th>Total RNs</th>
+        <th>Complete</th>
+        <th>Warnings</th>
+        <th>Incomplete</th>
+        <th>% complete</th>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td>Missing docs contact</td>
+          <td style="text-align: right;">35</td>
+          <td style="text-align: right; color: green;">0</td>
+          <td style="text-align: right; color: orange;">0</td>
+          <td style="text-align: right; color: red;">35</td>
+          <td style="text-align: right;">0%</td>
+        </tr>
+        
+        <tr>
+          <td>jrouth@redhat.com</td>
+          <td style="text-align: right;">26</td>
+          <td style="text-align: right; color: green;">0</td>
+          <td style="text-align: right; color: orange;">0</td>
+          <td style="text-align: right; color: red;">26</td>
+          <td style="text-align: right;">0%</td>
+        </tr>
+        
+        <tr>
+          <td>bburt@redhat.com</td>
+          <td style="text-align: right;">6</td>
+          <td style="text-align: right; color: green;">0</td>
+          <td style="text-align: right; color: orange;">0</td>
+          <td style="text-align: right; color: red;">6</td>
+          <td style="text-align: right;">0%</td>
+        </tr>
+        
+        <tr>
+          <td>opayne@redhat.com</td>
+          <td style="text-align: right;">6</td>
+          <td style="text-align: right; color: green;">0</td>
+          <td style="text-align: right; color: orange;">0</td>
+          <td style="text-align: right; color: red;">6</td>
+          <td style="text-align: right;">0%</td>
+        </tr>
+        
+        <tr>
+          <td>mpytlak@redhat.com</td>
+          <td style="text-align: right;">4</td>
+          <td style="text-align: right; color: green;">0</td>
+          <td style="text-align: right; color: orange;">0</td>
+          <td style="text-align: right; color: red;">4</td>
+          <td style="text-align: right;">0%</td>
+        </tr>
+        
+        <tr>
+          <td>ssiddhar@redhat.com</td>
+          <td style="text-align: right;">1</td>
+          <td style="text-align: right; color: green;">0</td>
+          <td style="text-align: right; color: orange;">0</td>
+          <td style="text-align: right; color: red;">1</td>
+          <td style="text-align: right;">0%</td>
+        </tr>
+        
+      </tbody>
+    </table>
+
+
+    </hr>
+
+    <p id="footer">
+      Generated on Fri, 20 Jan 2023 18:49:18 +0000
+    </p>
+
+    <!-- <script src='/userContent/jquery-3.1.1.min.js' type='text/javascript'></script> -->
+    <!-- <script src='/userContent/js/bootstrap.min.js' type='text/javascript'></script> -->
+    <!-- <script src='/userContent/sorttable.js' type='text/javascript'></script> -->
+
+    <!-- Table filtering script copied from: https://codepen.io/chriscoyier/pen/tIuBL -->
+  <script>
+    (function(document) {
+    'use strict';
+
+    var LightTableFilter = (function(Arr) {
+
+      var _input;
+
+      function _onInputEvent(e) {
+        _input = e.target;
+        var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
+        Arr.forEach.call(tables, function(table) {
+          Arr.forEach.call(table.tBodies, function(tbody) {
+            Arr.forEach.call(tbody.rows, _filter);
+          });
+        });
+      }
+
+      function _filter(row) {
+        var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+        row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+      }
+
+      return {
+        init: function() {
+          var inputs = document.getElementsByClassName('light-table-filter');
+          Arr.forEach.call(inputs, function(input) {
+            input.oninput = _onInputEvent;
+          });
+        }
+      };
+    })(Array.prototype);
+
+    document.addEventListener('readystatechange', function() {
+      if (document.readyState === 'complete') {
+        LightTableFilter.init();
+      }
+    });
+
+    })(document);
+
+    /*
+    SortTable
+    version 2
+    7th April 2007
+    Stuart Langridge, http://www.kryogenix.org/code/browser/sorttable/
+
+    Thanks to many, many people for contributions and suggestions.
+    Licenced as X11: http://www.kryogenix.org/code/browser/licence.html
+    This basically means: do what you want with it.
+    */
+
+
+      var stIsIE = /*@cc_on!@*/false;
+
+      sorttable = {
+        init: function () {
+          // quit if this function has already been called
+          if (arguments.callee.done) return;
+          // flag this function so we don't do the same thing twice
+          arguments.callee.done = true;
+          // kill the timer
+          if (_timer) clearInterval(_timer);
+
+          if (!document.createElement || !document.getElementsByTagName) return;
+
+          sorttable.DATE_RE = /^(\d\d?)[\/\.-](\d\d?)[\/\.-]((\d\d)?\d\d)$/;
+
+          forEach(document.getElementsByTagName('table'), function (table) {
+            if (table.className.search(/\bsortable\b/) != -1) {
+              sorttable.makeSortable(table);
+            }
+          });
+
+        },
+
+        makeSortable: function (table) {
+          if (table.getElementsByTagName('thead').length == 0) {
+            // table doesn't have a tHead. Since it should have, create one and
+            // put the first table row in it.
+            the = document.createElement('thead');
+            the.appendChild(table.rows[0]);
+            table.insertBefore(the, table.firstChild);
+          }
+          // Safari doesn't support table.tHead, sigh
+          if (table.tHead == null) table.tHead = table.getElementsByTagName('thead')[0];
+
+          if (table.tHead.rows.length != 1) return; // can't cope with two header rows
+
+          // Sorttable v1 put rows with a class of "sortbottom" at the bottom (as
+          // "total" rows, for example). This is B&R, since what you're supposed
+          // to do is put them in a tfoot. So, if there are sortbottom rows,
+          // for backwards compatibility, move them to tfoot (creating it if needed).
+          sortbottomrows = [];
+          for (var i = 0; i < table.rows.length; i++) {
+            if (table.rows[i].className.search(/\bsortbottom\b/) != -1) {
+              sortbottomrows[sortbottomrows.length] = table.rows[i];
+            }
+          }
+          if (sortbottomrows) {
+            if (table.tFoot == null) {
+              // table doesn't have a tfoot. Create one.
+              tfo = document.createElement('tfoot');
+              table.appendChild(tfo);
+            }
+            for (var i = 0; i < sortbottomrows.length; i++) {
+              tfo.appendChild(sortbottomrows[i]);
+            }
+            delete sortbottomrows;
+          }
+
+          // work through each column and calculate its type
+          headrow = table.tHead.rows[0].cells;
+          for (var i = 0; i < headrow.length; i++) {
+            // manually override the type with a sorttable_type attribute
+            if (!headrow[i].className.match(/\bsorttable_nosort\b/)) { // skip this col
+              mtch = headrow[i].className.match(/\bsorttable_([a-z0-9]+)\b/);
+              if (mtch) { override = mtch[1]; }
+              if (mtch && typeof sorttable["sort_" + override] == 'function') {
+                headrow[i].sorttable_sortfunction = sorttable["sort_" + override];
+              } else {
+                headrow[i].sorttable_sortfunction = sorttable.guessType(table, i);
+              }
+              // make it clickable to sort
+              headrow[i].sorttable_columnindex = i;
+              headrow[i].sorttable_tbody = table.tBodies[0];
+              dean_addEvent(headrow[i], "click", sorttable.innerSortFunction = function (e) {
+
+                if (this.className.search(/\bsorttable_sorted\b/) != -1) {
+                  // if we're already sorted by this column, just
+                  // reverse the table, which is quicker
+                  sorttable.reverse(this.sorttable_tbody);
+                  this.className = this.className.replace('sorttable_sorted',
+                    'sorttable_sorted_reverse');
+                  this.removeChild(document.getElementById('sorttable_sortfwdind'));
+                  sortrevind = document.createElement('span');
+                  sortrevind.id = "sorttable_sortrevind";
+                  sortrevind.innerHTML = stIsIE ? '&nbsp<font face="webdings">5</font>' : '&nbsp;&#x25B4;';
+                  this.appendChild(sortrevind);
+                  return;
+                }
+                if (this.className.search(/\bsorttable_sorted_reverse\b/) != -1) {
+                  // if we're already sorted by this column in reverse, just
+                  // re-reverse the table, which is quicker
+                  sorttable.reverse(this.sorttable_tbody);
+                  this.className = this.className.replace('sorttable_sorted_reverse',
+                    'sorttable_sorted');
+                  this.removeChild(document.getElementById('sorttable_sortrevind'));
+                  sortfwdind = document.createElement('span');
+                  sortfwdind.id = "sorttable_sortfwdind";
+                  sortfwdind.innerHTML = stIsIE ? '&nbsp<font face="webdings">6</font>' : '&nbsp;&#x25BE;';
+                  this.appendChild(sortfwdind);
+                  return;
+                }
+
+                // remove sorttable_sorted classes
+                theadrow = this.parentNode;
+                forEach(theadrow.childNodes, function (cell) {
+                  if (cell.nodeType == 1) { // an element
+                    cell.className = cell.className.replace('sorttable_sorted_reverse', '');
+                    cell.className = cell.className.replace('sorttable_sorted', '');
+                  }
+                });
+                sortfwdind = document.getElementById('sorttable_sortfwdind');
+                if (sortfwdind) { sortfwdind.parentNode.removeChild(sortfwdind); }
+                sortrevind = document.getElementById('sorttable_sortrevind');
+                if (sortrevind) { sortrevind.parentNode.removeChild(sortrevind); }
+
+                this.className += ' sorttable_sorted';
+                sortfwdind = document.createElement('span');
+                sortfwdind.id = "sorttable_sortfwdind";
+                sortfwdind.innerHTML = stIsIE ? '&nbsp<font face="webdings">6</font>' : '&nbsp;&#x25BE;';
+                this.appendChild(sortfwdind);
+
+                // build an array to sort. This is a Schwartzian transform thing,
+                // i.e., we "decorate" each row with the actual sort key,
+                // sort based on the sort keys, and then put the rows back in order
+                // which is a lot faster because you only do getInnerText once per row
+                row_array = [];
+                col = this.sorttable_columnindex;
+                rows = this.sorttable_tbody.rows;
+                for (var j = 0; j < rows.length; j++) {
+                  row_array[row_array.length] = [sorttable.getInnerText(rows[j].cells[col]), rows[j]];
+                }
+                /* If you want a stable sort, uncomment the following line */
+                //sorttable.shaker_sort(row_array, this.sorttable_sortfunction);
+                /* and comment out this one */
+                row_array.sort(this.sorttable_sortfunction);
+
+                tb = this.sorttable_tbody;
+                for (var j = 0; j < row_array.length; j++) {
+                  tb.appendChild(row_array[j][1]);
+                }
+
+                delete row_array;
+              });
+            }
+          }
+        },
+
+        guessType: function (table, column) {
+          // guess the type of a column based on its first non-blank row
+          sortfn = sorttable.sort_alpha;
+          for (var i = 0; i < table.tBodies[0].rows.length; i++) {
+            text = sorttable.getInnerText(table.tBodies[0].rows[i].cells[column]);
+            if (text != '') {
+              if (text.match(/^-?[Ł$¤]?[\d,.]+%?$/)) {
+                return sorttable.sort_numeric;
+              }
+              // check for a date: dd/mm/yyyy or dd/mm/yy
+              // can have / or . or - as separator
+              // can be mm/dd as well
+              possdate = text.match(sorttable.DATE_RE)
+              if (possdate) {
+                // looks like a date
+                first = parseInt(possdate[1]);
+                second = parseInt(possdate[2]);
+                if (first > 12) {
+                  // definitely dd/mm
+                  return sorttable.sort_ddmm;
+                } else if (second > 12) {
+                  return sorttable.sort_mmdd;
+                } else {
+                  // looks like a date, but we can't tell which, so assume
+                  // that it's dd/mm (English imperialism!) and keep looking
+                  sortfn = sorttable.sort_ddmm;
+                }
+              }
+            }
+          }
+          return sortfn;
+        },
+
+        getInnerText: function (node) {
+          // gets the text we want to use for sorting for a cell.
+          // strips leading and trailing whitespace.
+          // this is *not* a generic getInnerText function; it's special to sorttable.
+          // for example, you can override the cell text with a customkey attribute.
+          // it also gets .value for <input> fields.
+
+          if (!node) return "";
+
+          hasInputs = (typeof node.getElementsByTagName == 'function') &&
+            node.getElementsByTagName('input').length;
+
+          if (node.getAttribute("sorttable_customkey") != null) {
+            return node.getAttribute("sorttable_customkey");
+          }
+          else if (typeof node.textContent != 'undefined' && !hasInputs) {
+            return node.textContent.replace(/^\s+|\s+$/g, '');
+          }
+          else if (typeof node.innerText != 'undefined' && !hasInputs) {
+            return node.innerText.replace(/^\s+|\s+$/g, '');
+          }
+          else if (typeof node.text != 'undefined' && !hasInputs) {
+            return node.text.replace(/^\s+|\s+$/g, '');
+          }
+          else {
+            switch (node.nodeType) {
+              case 3:
+                if (node.nodeName.toLowerCase() == 'input') {
+                  return node.value.replace(/^\s+|\s+$/g, '');
+                }
+              case 4:
+                return node.nodeValue.replace(/^\s+|\s+$/g, '');
+                break;
+              case 1:
+              case 11:
+                var innerText = '';
+                for (var i = 0; i < node.childNodes.length; i++) {
+                  innerText += sorttable.getInnerText(node.childNodes[i]);
+                }
+                return innerText.replace(/^\s+|\s+$/g, '');
+                break;
+              default:
+                return '';
+            }
+          }
+        },
+
+        reverse: function (tbody) {
+          // reverse the rows in a tbody
+          newrows = [];
+          for (var i = 0; i < tbody.rows.length; i++) {
+            newrows[newrows.length] = tbody.rows[i];
+          }
+          for (var i = newrows.length - 1; i >= 0; i--) {
+            tbody.appendChild(newrows[i]);
+          }
+          delete newrows;
+        },
+
+        /* sort functions
+           each sort function takes two parameters, a and b
+           you are comparing a[0] and b[0] */
+        sort_numeric: function (a, b) {
+          aa = parseFloat(a[0].replace(/[^0-9.-]/g, ''));
+          if (isNaN(aa)) aa = 0;
+          bb = parseFloat(b[0].replace(/[^0-9.-]/g, ''));
+          if (isNaN(bb)) bb = 0;
+          return aa - bb;
+        },
+        sort_alpha: function (a, b) {
+          if (a[0] == b[0]) return 0;
+          if (a[0] < b[0]) return -1;
+          return 1;
+        },
+        sort_ddmm: function (a, b) {
+          mtch = a[0].match(sorttable.DATE_RE);
+          y = mtch[3]; m = mtch[2]; d = mtch[1];
+          if (m.length == 1) m = '0' + m;
+          if (d.length == 1) d = '0' + d;
+          dt1 = y + m + d;
+          mtch = b[0].match(sorttable.DATE_RE);
+          y = mtch[3]; m = mtch[2]; d = mtch[1];
+          if (m.length == 1) m = '0' + m;
+          if (d.length == 1) d = '0' + d;
+          dt2 = y + m + d;
+          if (dt1 == dt2) return 0;
+          if (dt1 < dt2) return -1;
+          return 1;
+        },
+        sort_mmdd: function (a, b) {
+          mtch = a[0].match(sorttable.DATE_RE);
+          y = mtch[3]; d = mtch[2]; m = mtch[1];
+          if (m.length == 1) m = '0' + m;
+          if (d.length == 1) d = '0' + d;
+          dt1 = y + m + d;
+          mtch = b[0].match(sorttable.DATE_RE);
+          y = mtch[3]; d = mtch[2]; m = mtch[1];
+          if (m.length == 1) m = '0' + m;
+          if (d.length == 1) d = '0' + d;
+          dt2 = y + m + d;
+          if (dt1 == dt2) return 0;
+          if (dt1 < dt2) return -1;
+          return 1;
+        },
+
+        shaker_sort: function (list, comp_func) {
+          // A stable sort function to allow multi-level sorting of data
+          // see: http://en.wikipedia.org/wiki/Cocktail_sort
+          // thanks to Joseph Nahmias
+          var b = 0;
+          var t = list.length - 1;
+          var swap = true;
+
+          while (swap) {
+            swap = false;
+            for (var i = b; i < t; ++i) {
+              if (comp_func(list[i], list[i + 1]) > 0) {
+                var q = list[i]; list[i] = list[i + 1]; list[i + 1] = q;
+                swap = true;
+              }
+            } // for
+            t--;
+
+            if (!swap) break;
+
+            for (var i = t; i > b; --i) {
+              if (comp_func(list[i], list[i - 1]) < 0) {
+                var q = list[i]; list[i] = list[i - 1]; list[i - 1] = q;
+                swap = true;
+              }
+            } // for
+            b++;
+
+          } // while(swap)
+        }
+      }
+
+      /* ******************************************************************
+         Supporting functions: bundled here to avoid depending on a library
+         ****************************************************************** */
+
+      // Dean Edwards/Matthias Miller/John Resig
+
+      /* for Mozilla/Opera9 */
+      if (document.addEventListener) {
+        document.addEventListener("DOMContentLoaded", sorttable.init, false);
+      }
+
+      /* for Internet Explorer */
+      /*@cc_on @*/
+      /*@if (@_win32)
+          document.write("<script id=__ie_onload defer src=javascript:void(0)><\/script>");
+          var script = document.getElementById("__ie_onload");
+          script.onreadystatechange = function() {
+              if (this.readyState == "complete") {
+                  sorttable.init(); // call the onload handler
+              }
+          };
+      /*@end @*/
+
+      /* for Safari */
+      if (/WebKit/i.test(navigator.userAgent)) { // sniff
+        var _timer = setInterval(function () {
+          if (/loaded|complete/.test(document.readyState)) {
+            sorttable.init(); // call the onload handler
+          }
+        }, 10);
+      }
+
+      /* for other browsers */
+      window.onload = sorttable.init;
+
+      // written by Dean Edwards, 2005
+      // with input from Tino Zijdel, Matthias Miller, Diego Perini
+
+      // http://dean.edwards.name/weblog/2005/10/add-event/
+
+      function dean_addEvent(element, type, handler) {
+        if (element.addEventListener) {
+          element.addEventListener(type, handler, false);
+        } else {
+          // assign each event handler a unique ID
+          if (!handler.$$guid) handler.$$guid = dean_addEvent.guid++;
+          // create a hash table of event types for the element
+          if (!element.events) element.events = {};
+          // create a hash table of event handlers for each element/event pair
+          var handlers = element.events[type];
+          if (!handlers) {
+            handlers = element.events[type] = {};
+            // store the existing event handler (if there is one)
+            if (element["on" + type]) {
+              handlers[0] = element["on" + type];
+            }
+          }
+          // store the event handler in the hash table
+          handlers[handler.$$guid] = handler;
+          // assign a global event handler to do all the work
+          element["on" + type] = handleEvent;
+        }
+      };
+      // a counter used to create unique IDs
+      dean_addEvent.guid = 1;
+
+      function removeEvent(element, type, handler) {
+        if (element.removeEventListener) {
+          element.removeEventListener(type, handler, false);
+        } else {
+          // delete the event handler from the hash table
+          if (element.events && element.events[type]) {
+            delete element.events[type][handler.$$guid];
+          }
+        }
+      };
+
+      function handleEvent(event) {
+        var returnValue = true;
+        // grab the event object (IE uses a global event object)
+        event = event || fixEvent(((this.ownerDocument || this.document || this).parentWindow || window).event);
+        // get a reference to the hash table of event handlers
+        var handlers = this.events[event.type];
+        // execute each event handler
+        for (var i in handlers) {
+          this.$$handleEvent = handlers[i];
+          if (this.$$handleEvent(event) === false) {
+            returnValue = false;
+          }
+        }
+        return returnValue;
+      };
+
+      function fixEvent(event) {
+        // add W3C standard event methods
+        event.preventDefault = fixEvent.preventDefault;
+        event.stopPropagation = fixEvent.stopPropagation;
+        return event;
+      };
+      fixEvent.preventDefault = function () {
+        this.returnValue = false;
+      };
+      fixEvent.stopPropagation = function () {
+        this.cancelBubble = true;
+      }
+
+      // Dean's forEach: http://dean.edwards.name/base/forEach.js
+      /*
+        forEach, version 1.0
+        Copyright 2006, Dean Edwards
+        License: http://www.opensource.org/licenses/mit-license.php
+      */
+
+      // array-like enumeration
+      if (!Array.forEach) { // mozilla already supports this
+        Array.forEach = function (array, block, context) {
+          for (var i = 0; i < array.length; i++) {
+            block.call(context, array[i], i, array);
+          }
+        };
+      }
+
+      // generic enumeration
+      Function.prototype.forEach = function (object, block, context) {
+        for (var key in object) {
+          if (typeof this.prototype[key] == "undefined") {
+            block.call(context, object[key], key, object);
+          }
+        }
+      };
+
+      // character enumeration
+      String.forEach = function (string, block, context) {
+        Array.forEach(string.split(""), function (chr, index) {
+          block.call(context, chr, index, string);
+        });
+      };
+
+      // globally resolve forEach enumeration
+      var forEach = function (object, block, context) {
+        if (object) {
+          var resolve = Object; // default
+          if (object instanceof Function) {
+            // functions have a "length" property
+            resolve = Function;
+          } else if (object.forEach instanceof Function) {
+            // the object implements a custom forEach method so use that
+            object.forEach(block, context);
+            return;
+          } else if (typeof object == "string") {
+            // the object is a string
+            resolve = String;
+          } else if (typeof object.length == "number") {
+            // the object is array-like
+            resolve = Array;
+          }
+          resolve.forEach(object, block, context);
+        }
+      };
+
+    </script>
+
+  </body>
+</html>

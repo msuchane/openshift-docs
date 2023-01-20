@@ -1,0 +1,33 @@
+[id="new-features"]
+= New features
+
+This part describes new features and major enhancements introduced in {ProductName}{nbsp}{ProductNumber}.
+
+
+[id="BZ-2098054"]
+* With this release, AWS security groups are tagged immediately instead of after creation. This means that fewer requests are sent to AWS and the required user privileges are lowered. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2098054[*BZ#2098054*], link:https://issues.redhat.com/browse/OCPBUGS-3094[*OCPBUGS-3094*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2098054[Bugzilla:2098054]) 
+
+[id="BZ-2001409"]
+Feature:
+kube-controller-manager alerts (KubeControllerManagerDown, PodDisruptionBudgetAtLimit, PodDisruptionBudgetLimit, GarbageCollectorSyncFailed) now have links to github runbooks.
+
+Reason: 
+The runbooks help with understanding and debugging these alerts.
+
+* With this update, `kube-controller-manager` alerts (`KubeControllerManagerDown`, `PodDisruptionBudgetAtLimit`, `PodDisruptionBudgetLimit`, and `GarbageCollectorSyncFailed`) have links to Github  runbooks. The runbooks help users to understand debug these alerts. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2001409[*BZ#2001409*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2001409[Bugzilla:2001409]) 
+
+[id="BZ-2049591"]
+* With this update, running the `toolbox` command now checks for updates to the default image before launching the container. This improves security and provides users with the latest bug fixes. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2049591[*BZ#2049591*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2049591[Bugzilla:2049591]) 
+
+[id="BZ-2080449"]
+* Users can now opt into using the experimental VHD feature on Azure File. To opt in, users must specify the `fstype` parameter in a storage class and enable it with `--enable-vhd=true`. If `fstype` is used and the feature is not set to `true`, the volumes will fail to provision. 
++
+To opt out of using the VHD feature, remove the `fstype` parameter from your storage class. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2080449[*BZ#2080449*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2080449[Bugzilla:2080449]) 
