@@ -10,16 +10,9 @@ include::attributes.adoc[]
 
 // Include all external files here:
 
-//include::manual-sections/alpha.adoc[leveloffset=+1]
-include::manual-sections/beta.adoc[leveloffset=+1]
-
 include::manual-sections/making-open-source-more-inclusive.adoc[leveloffset=+1]
 
 include::manual-sections/proc_providing-feedback-on-red-hat-documentation.adoc[leveloffset=+1]
-
-include::manual-sections/overview.adoc[leveloffset=+1]
-
-include::manual-sections/distribution.adoc[leveloffset=+1]
 
 include::{generated-dir}/ref_new-features.adoc[leveloffset=+1]
 
