@@ -49,4 +49,6 @@ Bugzilla and JIRA tickets are listed in this document for reference. Tickets tha
 
 | `oc` | xref:BZ-2059125[Bugzilla:2059125], xref:BZ-2095708[Bugzilla:2095708]
 
+| other | xref:Jira-RHELPLAN-139430[Jira:RHELPLAN-139430], xref:Jira-RHELPLAN-121049[Jira:RHELPLAN-121049]
+
 |===

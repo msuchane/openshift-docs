@@ -12,3 +12,10 @@ Proposed doc text:
 * When scaling up an Alibaba Cloud cluster with {op-system-base} compute nodes, the new nodes show as `Ready`, but the Ingress pods do not transition to `Running` on these nodes. As a result, the scale-up operation does not succeed. As a workaround, you can perform a scale-up operation with {op-system} compute nodes. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2056387[*BZ#2056387*])
 
 (link:https://bugzilla.redhat.com/show_bug.cgi?id=2056387[Bugzilla:2056387]) 
+
+[id="Jira-RHELPLAN-121049"]
+.X.org configuration utilities do not work under Wayland
+
+X.org utilities for manipulating the screen do not work in the Wayland session. Notably, the `xrandr` utility does not work under Wayland due to its different approach to handling, resolutions, rotations, and layout.
+
+(Jira:RHELPLAN-121049) 

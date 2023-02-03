@@ -3,3 +3,8 @@
 
 # Jira tickets. Currently disabled because they're missing doc fields.
 # - [Jira, search: 'filter = 12404639']
+
+# Demo tickets from RHEL:
+- [Jira, key: RHELPLAN-69761]
+- [Jira, key: RHELPLAN-139430]
+- [Jira, key: RHELPLAN-121049]

@@ -31,3 +31,15 @@ The runbooks help with understanding and debugging these alerts.
 To opt out of using the VHD feature, remove the `fstype` parameter from your storage class. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2080449[*BZ#2080449*])
 
 (link:https://bugzilla.redhat.com/show_bug.cgi?id=2080449[Bugzilla:2080449]) | Missing docs contact | Done | link:https://bugzilla.redhat.com/show_bug.cgi?id=2080449[]
+
+[id="Jira-RHELPLAN-69761"]
+.🚧 [Intel] [RHEL9] SGX 1.5 (SGX1 + Flexible Launch Control) support | jherrman@redhat.com | WIP | link:https://issues.redhat.com/browse/RHELPLAN-69761[] 
+
+**No release note.**
+
+[id="Jira-RHELPLAN-139430"]
+.SSSD support for converting home directories to lowercase
+
+With this enhancement, you can now configure SSSD to convert user home directories to lowercase. This helps to integrate better with the case-sensitive nature of the RHEL environment. The `override_homedir` option in the `[nss]` section of the `/etc/sssd/sssd.conf` file now recognizes the `%h` template value. If you use `%h` as part of the `override_homedir` definition, SSSD replaces `%h` with the user’s home directory in lowercase.
+
+(Jira:RHELPLAN-139430) | lmcgarry@redhat.com | Done | link:https://issues.redhat.com/browse/RHELPLAN-139430[]
