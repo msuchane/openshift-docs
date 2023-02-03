@@ -4,6 +4,7 @@ bugzilla:
     doc_type: "cf_doc_type"
     doc_text: "cf_release_notes"
     doc_text_status: "requires_doc_text"
+    # Standard field
     docs_contact: ""
     target_release: "cf_internal_target_release"
     subsystems: "pool"
@@ -15,5 +16,7 @@ jira:
     doc_text: "customfield_12317322"
     doc_text_status: "customfield_12317337"
     docs_contact: "customfield_12317336"
+    # Standard field
     target_release: ""
-    subsystems: "customfield_12317259"
+    # Not used in OpenShift docs
+    subsystems: ""
