@@ -82,29 +82,73 @@ chapters:
     intro_abstract: "This part describes bugs fixed in {ProductName}{nbsp}{ProductNumber} that have a significant impact on users."
     filter:
       doc_type: ["Bug Fix"]
+    sections:
+      - *rhcos
+      - *installer
+      - *web_console
+      - *oc
+      - *images
+      - *storage
+      - *olm
+      - *sdk
+      - *mco
+      - *nodes
+      - *monitoring
+      - *rest
   - title: "Technology Previews"
     intro_abstract: |
-      This part provides a list of all Technology Previews available in {ProductName}{nbsp}9.
+      This part provides a list of all Technology Previews available in {ProductName}{nbsp}{ProductNumber}.
 
       For information on Red Hat scope of support for Technology Preview features, see link:https://access.redhat.com/support/offerings/techpreview/[Technology Preview Features Support Scope].
     filter:
       doc_type: ["Technology Preview"]
+    sections:
+      - *rhcos
+      - *installer
+      - *web_console
+      - *oc
+      - *images
+      - *storage
+      - *olm
+      - *sdk
+      - *mco
+      - *nodes
+      - *monitoring
+      - *rest
   - title: "Deprecated functionality"
     intro_abstract: |
-       This part provides an overview of functionality that has been _deprecated_ in {ProductName}{nbsp}9.
+       This part provides an overview of functionality that has been _deprecated_ in {ProductName}{nbsp}{ProductNumber}.
 
        Deprecated functionality will likely not be supported in future major releases of this product and is not recommended for new deployments. For the most recent list of deprecated functionality within a particular major release, refer to the latest version of release documentation.
-
-       The support status of deprecated functionality remains unchanged within {ProductName}{nbsp}9. For information about the length of support, see link:https://access.redhat.com/support/policy/updates/errata[Red Hat Enterprise Linux Life Cycle] and link:https://access.redhat.com/support/policy/updates/rhel-app-streams-life-cycle[Red Hat Enterprise Linux Application Streams Life Cycle].
-
-       Deprecated hardware components are not recommended for new deployments on the current or future major releases. Hardware driver updates are limited to security and critical fixes only. Red Hat recommends replacing this hardware as soon as reasonably feasible.
-
-       A package can be deprecated and not recommended for further use. Under certain circumstances, a package can be removed from a product. Product documentation then identifies more recent packages that offer functionality similar, identical, or more advanced to the one deprecated, and provides further recommendations.
-
-       For information regarding functionality that is present in RHEL 8 but has been _removed_ in RHEL 9, see link:https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html-single/considerations_in_adopting_rhel_9/[Considerations in adopting RHEL 9].
     filter:
       doc_type: ["Deprecated Functionality"]
+    sections:
+      - *rhcos
+      - *installer
+      - *web_console
+      - *oc
+      - *images
+      - *storage
+      - *olm
+      - *sdk
+      - *mco
+      - *nodes
+      - *monitoring
+      - *rest
   - title: "Known issues"
     intro_abstract: "This part describes known issues in {ProductName}{nbsp}{ProductNumber}."
     filter:
       doc_type: ["Known Issue"]
+    sections:
+      - *rhcos
+      - *installer
+      - *web_console
+      - *oc
+      - *images
+      - *storage
+      - *olm
+      - *sdk
+      - *mco
+      - *nodes
+      - *monitoring
+      - *rest

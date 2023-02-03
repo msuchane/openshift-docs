@@ -1,0 +1,25 @@
+[id="bug-fixes-storage"]
+= Storage
+
+
+
+
+[id="BZ-2022328"]
+* Previously, {product-title} detachec a volume when a Container Storage Interface (CSI) driver was not able to unmount the volume from a node. Detaching a volume without unmount is not allowed by CSI specifications and drivers could enter `undocumented` state. With this update, CSI drivers are detached before unmount only on unhealthy nodes preventing the `undocumented` state. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2049306[*BZ#2049306*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2022328[Bugzilla:2022328]) 
+
+[id="BZ-2057637"]
+* Previously, there were missing annotations on the Manila CSI Driver Operator's VolumeSnapshotClass. Consequently, the Manila CSI snapshotter could not locate secrets, and could not create snapshots with the default VolumeSnapshotClass. This update fixes the issue so that secret names and namespace are included in the default VolumeSnapshotClass. As a result, users can now create snapshots in the Manila CSI Driver Operator using the default VolumeSnapshotClass. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2057637[*BZ#2057637*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2057637[Bugzilla:2057637]) 
+
+[id="BZ-2082773"]
+* Previously, checks for generic ephemeral volumes failed. With this update, checks for expandable volumes now include generic ephemeral volumes. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2082773[*BZ#2082773*]
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2082773[Bugzilla:2082773]) 
+
+[id="BZ-2108473"]
+* Previously, if more than one secret was present for vSphere, the vSphere CSI Operator randomly picked a secret and sometimes caused the Operator to restart. With this update, a warning appears when there is more than one secret on the vCenter CSI Operator. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2108473[*BZ#2108473*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2108473[Bugzilla:2108473]) 

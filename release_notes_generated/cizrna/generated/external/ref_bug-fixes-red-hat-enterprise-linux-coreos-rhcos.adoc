@@ -1,0 +1,20 @@
+[id="bug-fixes-red-hat-enterprise-linux-coreos-rhcos"]
+= Red Hat Enterprise Linux CoreOS (RHCOS)
+
+
+
+
+[id="BZ-1915537"]
+* Previously, the `podman exec` command did not work well with nested containers. Users encountered this issue when accessing a node using the `oc debug` command and then running a container with the `toolbox` command. Because of this, users were unable to reuse toolboxes on {op-system}. This fix updates the toolbox library code to account for this behavior, so users can now reuse toolboxes on {op-system}. (link:https://bugzilla.redhat.com/show_bug.cgi?id=1915537[*BZ#1915537*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=1915537[Bugzilla:1915537]) 
+
+[id="BZ-2048789"]
+* Previously, updating to Podman 4.0 prevented users from using custom images with toolbox containers on {op-system}. This fix updates the toolbox library code to account for the new Podman behavior, so users can now use custom images with toolbox on {op-system} as expected. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2048789[*BZ#2048789*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2048789[Bugzilla:2048789]) 
+
+[id="BZ-2093040"]
+* Previously, updating to Podman 4.0 prevented users from running the `toolbox` command on {op-system}. This fix updates the toolbox library code to account for the new Podman behavior, so users can now run `toolbox` on {op-system} as expected. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2093040[*BZ#2093040*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2093040[Bugzilla:2093040]) 

@@ -16,7 +16,7 @@ include::manual-sections/proc_providing-feedback-on-red-hat-documentation.adoc[l
 
 include::{generated-dir}/assembly_new-features.adoc[leveloffset=+1]
 
-include::{generated-dir}/ref_bug-fixes.adoc[leveloffset=+1]
+include::{generated-dir}/assembly_bug-fixes.adoc[leveloffset=+1]
 
 // No release notes in this section:
 // include::{generated-dir}/ref_technology-previews.adoc[leveloffset=+1]
@@ -24,7 +24,7 @@ include::{generated-dir}/ref_bug-fixes.adoc[leveloffset=+1]
 // No release notes in this section:
 // include::{generated-dir}/ref_deprecated-functionality.adoc[leveloffset=+1]
 
-include::{generated-dir}/ref_known-issues.adoc[leveloffset=+1]
+include::{generated-dir}/assembly_known-issues.adoc[leveloffset=+1]
 
 include::{generated-dir}/ref_list-of-tickets-by-component.adoc[leveloffset=+1]
 

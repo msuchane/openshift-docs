@@ -1,0 +1,15 @@
+[id="bug-fixes-operator-lifecycle"]
+= Operator lifecycle
+
+
+
+
+[id="BZ-2097557"]
+* Previously, Operator Lifecycle Manager (OLM) would attempt to update namespaces to apply a label, even if the label was present on the namespace. Consequently, the update requests increased the workload in API and etcd services. With this update, OLM compares existing labels against the expected labels on a namespace before issuing an update. As a result, OLM no longer attempts to make unnecessary update requests on namespaces. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2105045[*BZ#2105045*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2097557[Bugzilla:2097557]) | Missing docs contact | Done | link:https://bugzilla.redhat.com/show_bug.cgi?id=2097557[]
+
+[id="BZ-2105045"]
+* Previously, Operator Lifecycle Manager (OLM) would attempt to update namespaces to apply a label, even if the label was present on the namespace. Consequently, the update requests increased the workload in API and etcd services. With this update, OLM compares existing labels against the expected labels on a namespace before issuing an update. As a result, OLM no longer attempts to make unnecessary update requests on namespaces. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2105045[*BZ#2105045*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2105045[Bugzilla:2105045]) | Missing docs contact | Done | link:https://bugzilla.redhat.com/show_bug.cgi?id=2105045[]

@@ -1,0 +1,11 @@
+[id="bug-fixes-machine-config-operator"]
+= Machine Config Operator
+
+
+
+
+[id="BZ-2034883"]
+* Previously, the Machine Config Operator (MCO) `ControllerConfig` resource, which contains important certificates, was only synced if the Operator's daemon sync succeeded. By design, unready nodes during a daemon sync prevent that daemon sync from succeeding, so unready nodes were indirectly preventing the `ControllerConfig` resource, and therefore those certificates, from syncing. This resulted in eventual cluster degradation when there were unready nodes due to inability to rotate the certificates contained in the `ControllerConfig` resource. With this release, the sync of the `ControllerConfig` resource is no longer dependent on the daemon sync succeeding, so the `ControllerConfig` resource now continues to sync if the daemon sync fails. This means that unready nodes no longer prevent the `ControllerConfig` resource from syncing, so certificates continue to be updated even when there are unready nodes.
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2034883[*2034883*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2034883[Bugzilla:2034883]) 

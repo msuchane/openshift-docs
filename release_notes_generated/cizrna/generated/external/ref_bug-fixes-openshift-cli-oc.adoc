@@ -1,0 +1,15 @@
+[id="bug-fixes-openshift-cli-oc"]
+= OpenShift CLI (oc)
+
+
+
+
+[id="BZ-2059125"]
+* Previously, on macOS arm64 architecture, the `oc` binary needed to be signed manually. As a result, the `oc` binary did not work as expected. This update implements a self-signing binary for `oc` mimicking. As a result, the `oc` binary on macOS arm64 architectures works properly. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2059125[*BZ#2059125*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2059125[Bugzilla:2059125]) 
+
+[id="BZ-2095708"]
+* Previously, `must-gather` was trying to collect resources that were not present on the server. Consequently, `must-gather` would print error messages. Now, before collecting resources, `must-gather` checks whether the resource exists. As a result, `must-gather` no longer prints an error when it fails to collect non-existing resources on the server. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2095708[*BZ#2095708*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2095708[Bugzilla:2095708]) 

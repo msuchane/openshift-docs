@@ -1,0 +1,55 @@
+[id="bug-fixes-web-console"]
+= Web console
+
+
+
+
+[id="BZ-1951901"]
+* Previously, the wrong calculating method was used when counter master and worker nodes. With this update, the correct worker nodes are calculated when nodes have both the `master` and `worker` role. (link:https://bugzilla.redhat.com/show_bug.cgi?id=1951901[*BZ#1951901*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=1951901[Bugzilla:1951901]) 
+
+[id="BZ-2037329"]
+* Previously, there were redundant checks for the model resulting in tab reloading which occasionally resulted in a flickering of the tab contents where they re-rendered. With this update, the redundant model check was removed, and the model is only checked once. As a result, the tab contents do not flicker and no longer re-render. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2037329[*BZ#2037329*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2037329[Bugzilla:2037329]) 
+
+[id="BZ-2052662"]
+* Previously, if issues were pending, clicking on the *Insights* link would crash the page. As a workaround, you can wait for the variable to become `initialized` before clicking the *Insights* link. As a result, the Insights page will open as expected. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2052662[*BZ#2052662*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2052662[Bugzilla:2052662]) 
+
+[id="BZ-2080260"]
+* Previously, conflicting `react-router` routes for `ImageManifestVuln` resulted in attempts to render a details page for `ImageManifestVuln` with a `~new` name. Now, the container security plugin has been updated to remove conflicting routes and to ensure dynamic lists and details page extensions are used on the Operator details page. As a result, the console renders correct create, list, and details pages for `ImageManifestVuln`. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2080260[*BZ#2080260*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2080260[Bugzilla:2080260]) 
+
+[id="BZ-2084453"]
+* Previously, there was a coding error, yaml that was not synced was occasionally displayed to users. With this update, synced yaml always displays. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2084453[*BZ#2084453*]
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2084453[Bugzilla:2084453]) 
+
+[id="BZ-2094240"]
+* Previously, when the `MachineConfigPool` resource was paused, the option to unpause said *Resume rollouts*. The wording has been updated so that it now says *Resume updates`. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2094240[*BZ#2094240*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2094240[Bugzilla:2094240]) 
+
+[id="BZ-2094502"]
+* Previously, when installing an Operator that required a custom resource (CR) to be created for use, the *Create resource* button could fail to install the CR because it was pointing to the incorrect namespace. With this update, the *Create resource* button works as expected. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2094502[*BZ#2094502*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2094502[Bugzilla:2094502]) 
+
+[id="BZ-2096350"]
+* Previously, the *Cluster update* modal was not displaying errors properly. As a result, the *Cluster update* modal did not display or explain errors when they occurred. With this update, the *Cluster update* modal was updated to correctly display errors. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2096350[*BZ#2096350*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2096350[Bugzilla:2096350]) 
+
+[id="BZ-2098234"]
+* Previously, in the administrator perspective of the web console, the link to *_Learn more about the OpenShift local update services_* on the *Default update server* pop-up window in the *Cluster Settings* page produces a 404 error. With this update, the link works as expected. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2098234[*BZ#2098234*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2098234[Bugzilla:2098234]) 
+
+[id="BZ-2102098"]
+* Previously, when selecting the `edit` label from the action list on the OpenShift Dedicated node page, no response was elicited and a web hook error was returned. This issue has been fixed so that the error message is only returned when editing fails. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2102098[*BZ#2102098*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2102098[Bugzilla:2102098]) 

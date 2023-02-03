@@ -1,0 +1,46 @@
+[id="bug-fixes-monitoring"]
+= Monitoring
+
+
+
+
+[id="BZ-2039411"]
+* Before this update, if the Cluster Monitoring Operator (CMO) failed to update Prometheus, the CMO did not verify whether a previous deployment was running and would report that cluster monitoring was unavailable even if one of the Prometheus pods was still running. With this update, the CMO now checks for running Prometheus pods in this situation and reports that cluster monitoring is unavailable only if no Prometheus pods are running.
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2039411[*BZ#2039411*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2039411[Bugzilla:2039411]) 
+
+[id="BZ-2043518"]
+* Before this update, if Prometheus Operator failed to run or schedule Prometheus pods, the system provided no underlying reason for the failure. With this update, if Prometheus pods are not run or scheduled, the Cluster Monitoring Operator updates the `clusterOperator` monitoring status with a reason for the failure, which can be used to troubleshoot the underlying issue.   (link:https://bugzilla.redhat.com/show_bug.cgi?id=2043518[*BZ#2043518*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2043518[Bugzilla:2043518]) 
+
+[id="BZ-2083226"]
+* Before this update, Alertmanager pod startup might time out because of slow DNS resolution, and the Alertmanager pods would not start. With this release, the timeout value has been increased to seven minutes, which prevents pod startup from timing out.
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2083226[*BZ#2083226*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2083226[Bugzilla:2083226]) 
+
+[id="BZ-2084504"]
+* Before this update, if you created an alert silence from the *Developer* perspective in the {product-title} web console, external labels were included that did not match the alert. Therefore, the alert would not be silenced. With this update, external labels are now excluded when you create a silence in the *Developer* perspective so that newly created silences function as expected.
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2084504[*BZ#2084504*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2084504[Bugzilla:2084504]) 
+
+[id="BZ-2093892"]
+* Before this update, if you configured OpsGenie as an alert receiver, a warning would appear in the log that `api_key` and `api_key_file` are mutually exclusive and that `api_key` takes precedence. This warning appeared even if you had not defined `api_key_file`. With this update, this warning only appears in the log if you have defined both  `api_key` and `api_key_file`.
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2093892[*BZ#2093892*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2093892[Bugzilla:2093892]) 
+
+[id="BZ-2099939"]
+* Previously, if you enabled an instance of Alertmanager dedicated to user-defined projects, a misconfiguration could occur in certain circumstances, and you would not be informed that the user-defined project Alertmanager config map settings did not load for either the main instance of Alertmanager or the instance dedicated to user-defined projects. With this release, if this misconfiguration occurs, the Cluster Monitoring Operator now displays a message that informs you of the issue and provides resolution steps. 
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2099939[*BZ#2099939*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2099939[Bugzilla:2099939]) 
+
+[id="BZ-2114721"]
+* Before this update the Telemeter Client (TC) only loaded new pull secrets when it was manually restarted. Therefore, if a pull secret had been changed or updated and the TC had not been restarted, the TC would fail to authenticate with the server. This update addresses the issue so that when the secret is rotated, the deployment is automatically restarted and uses the updated token to authenticate.
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2114721[*BZ#2114721*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2114721[Bugzilla:2114721]) 

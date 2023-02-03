@@ -1,0 +1,29 @@
+[id="bug-fixes"]
+= Bug fixes
+
+This part describes bugs fixed in {ProductName}{nbsp}{ProductNumber} that have a significant impact on users.
+
+
+include::ref_bug-fixes-red-hat-enterprise-linux-coreos-rhcos.adoc[leveloffset=+1]
+
+include::ref_bug-fixes-installation-and-upgrade.adoc[leveloffset=+1]
+
+include::ref_bug-fixes-web-console.adoc[leveloffset=+1]
+
+include::ref_bug-fixes-openshift-cli-oc.adoc[leveloffset=+1]
+
+include::ref_bug-fixes-images.adoc[leveloffset=+1]
+
+include::ref_bug-fixes-storage.adoc[leveloffset=+1]
+
+include::ref_bug-fixes-operator-lifecycle.adoc[leveloffset=+1]
+
+include::ref_bug-fixes-operator-development.adoc[leveloffset=+1]
+
+include::ref_bug-fixes-machine-config-operator.adoc[leveloffset=+1]
+
+include::ref_bug-fixes-nodes.adoc[leveloffset=+1]
+
+include::ref_bug-fixes-monitoring.adoc[leveloffset=+1]
+
+include::ref_bug-fixes-other-components.adoc[leveloffset=+1]

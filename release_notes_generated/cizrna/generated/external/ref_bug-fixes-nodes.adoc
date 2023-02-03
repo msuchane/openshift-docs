@@ -1,0 +1,10 @@
+[id="bug-fixes-nodes"]
+= Nodes
+
+
+
+
+[id="BZ-1977660"]
+* Previously, a symlinks error message was printed out as raw data instead of formatted as an error, making it difficult to understand. This fix formats the error message properly, so that it is easily understood. (link:https://bugzilla.redhat.com/show_bug.cgi?id=1977660[*BZ#1977660*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=1977660[Bugzilla:1977660]) 

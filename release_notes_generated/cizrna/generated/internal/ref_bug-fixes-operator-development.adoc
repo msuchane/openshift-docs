@@ -1,0 +1,10 @@
+[id="bug-fixes-operator-development"]
+= Operator development
+
+
+
+
+[id="BZ-2091864"]
+* With this update, you can now set the security context for the registry pod by including the `securityContext` configuration field in the pod specification. This will apply the security context for all containers in the pod. The `securityContext` field also defines the pod's privileges. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2091864[*BZ#2091864*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2091864[Bugzilla:2091864]) | Missing docs contact | Done | link:https://bugzilla.redhat.com/show_bug.cgi?id=2091864[]

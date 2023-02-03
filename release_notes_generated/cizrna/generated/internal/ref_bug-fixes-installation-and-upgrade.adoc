@@ -1,0 +1,60 @@
+[id="bug-fixes-installation-and-upgrade"]
+= Installation and upgrade
+
+
+
+
+[id="BZ-1944365"]
+* Previously, users could manually set the API and Ingress virtual IP addresses to values that conflicted with the allocation pool of the DHCP server when installing a cluster on OpenStack. This could cause the DHCP server to assign one of the VIP addresses to a new machine, which would fail to start. In this update, the installation program validates the user-provided VIP addresses to ensure that they do not conflict with any DHCP pools. (link:https://bugzilla.redhat.com/show_bug.cgi?id=1944365[*BZ1944365*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=1944365[Bugzilla:1944365]) | Missing docs contact | Done | link:https://bugzilla.redhat.com/show_bug.cgi?id=1944365[]
+
+[id="BZ-2055247"]
+* Previously, installing a cluster on Microsoft Azure failed when the Azure DCasv5-series or DCadsv5-series of confidential VMs were specified as control plane nodes. With this update, the installation program now stops the installation with an error, which states that confidential VMs are not yet supported. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2055247[*BZ#2055247*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2055247[Bugzilla:2055247]) | mpytlak@redhat.com | Done | link:https://bugzilla.redhat.com/show_bug.cgi?id=2055247[]
+
+[id="BZ-2076646"]
+* Previously, uninstalling a cluster using the installation program failed to delete all resources in clusters installed on GCP if the cluster name was more than 22 characters long. In this update, uninstalling a cluster using the installation program correctly locates and deletes all GCP cluster resources in cases of long cluster names. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2076646[*BZ#2076646*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2076646[Bugzilla:2076646]) | Missing docs contact | Done | link:https://bugzilla.redhat.com/show_bug.cgi?id=2076646[]
+
+[id="BZ-2095323"]
+* Previously, when installing a cluster on :rh-openstack-first: with multiple networks defined in the `machineNetwork` parameter, the installation program only created security group rules for the first network. With this update, the installation program creates security group rules for all networks defined in the `machineNetwork` so that users no longer need to manually edit security group rules after installation. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2095323[*BZ#2095323*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2095323[Bugzilla:2095323]) | Missing docs contact | Done | link:https://bugzilla.redhat.com/show_bug.cgi?id=2095323[]
+
+[id="BZ-2097691"]
+* Previously, when installing a cluster on vSphere using a datacenter that is embedded inside a folder, the installation program could not locate the datacenter object, causing the installation to fail. In this update, the installation program can traverse the directory that contains the datacenter object, allowing the installation to succeed. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2097691[*BZ2097691*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2097691[Bugzilla:2097691]) | Missing docs contact | Done | link:https://bugzilla.redhat.com/show_bug.cgi?id=2097691[]
+
+[id="BZ-2098299"]
+* Previously, cluster installations using Hive could fail if Hive used an older version of the install-config.yaml file. This update allows the installer to accept older versions of the install-config.yaml file provided by Hive. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2098299[*BZ#2098299*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2098299[Bugzilla:2098299]) | Missing docs contact | Done | link:https://bugzilla.redhat.com/show_bug.cgi?id=2098299[]
+
+[id="BZ-2102324"]
+* Previously, when an installation on Google Cloud provider (GCP) failed because an invalid GCP region was specified, the resulting error message did not mention this as the cause of the failure. This update improves the error message, which now states the region is not valid. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2102324[*BZ#2102324*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2102324[Bugzilla:2102324]) | mpytlak@redhat.com | Done | link:https://bugzilla.redhat.com/show_bug.cgi?id=2102324[]
+
+[id="BZ-2103144"]
+* Previously, the installation program would incorrectly allow the `apiVIP` and `ingressVIP` parameters to use the same IPv6 address if they represented the address differently, such as listing the address in an abbreviated format. In this update, the installer validates these two parameters correctly regardless of their formatting, requiring separate IP addresses for each parameter. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2103144[*BZ#2103144*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2103144[Bugzilla:2103144]) | Missing docs contact | Done | link:https://bugzilla.redhat.com/show_bug.cgi?id=2103144[]
+
+[id="BZ-2103236"]
+* Previously, if a cluster failed to install on Google Cloud Platform because the service account had insufficient permissions, the resulting error message did not mention this as the cause of the failure. This update improves the error message, which now instructs users to check the permissions that are assigned to the service account. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2103236[*BZ#2103236*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2103236[Bugzilla:2103236]) | mpytlak@redhat.com | Done | link:https://bugzilla.redhat.com/show_bug.cgi?id=2103236[]
+
+[id="BZ-2105341"]
+* Previously, gathering bootstrap logs was not possible until the control plane machines were running. With this update, gathering bootstrap logs now only requires that the bootstrap machine be available. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2105341[*BZ#2105341*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2105341[Bugzilla:2105341]) | mpytlak@redhat.com | Done | link:https://bugzilla.redhat.com/show_bug.cgi?id=2105341[]
+
+[id="BZ-2109388"]
+* Previously, installing a cluster on Amazon Web Services started and then failed when the IAM administrative user was not assigned the `s3:GetBucketPolicy` permission. This update adds this policy to checklist that the installation program uses to ensure that all of the required permissions are assigned. As a result, the installation program now stops the installation with a warning that the IAM administrative user is missing the `s3:GetBucketPolicy` permission. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2109388[*BZ#2109388*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2109388[Bugzilla:2109388]) | mpytlak@redhat.com | Done | link:https://bugzilla.redhat.com/show_bug.cgi?id=2109388[]
