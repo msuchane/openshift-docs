@@ -1,0 +1,21 @@
+[id="new-features-other-components"]
+= Other components
+
+I didn't know how exactly to sort these.
+
+
+[id="BZ-2098054"]
+* With this release, AWS security groups are tagged immediately instead of after creation. This means that fewer requests are sent to AWS and the required user privileges are lowered. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2098054[*BZ#2098054*], link:https://issues.redhat.com/browse/OCPBUGS-3094[*OCPBUGS-3094*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2098054[Bugzilla:2098054]) | jrouth@redhat.com | Done | link:https://bugzilla.redhat.com/show_bug.cgi?id=2098054[]
+
+[id="BZ-2001409"]
+Feature:
+kube-controller-manager alerts (KubeControllerManagerDown, PodDisruptionBudgetAtLimit, PodDisruptionBudgetLimit, GarbageCollectorSyncFailed) now have links to github runbooks.
+
+Reason: 
+The runbooks help with understanding and debugging these alerts.
+
+* With this update, `kube-controller-manager` alerts (`KubeControllerManagerDown`, `PodDisruptionBudgetAtLimit`, `PodDisruptionBudgetLimit`, and `GarbageCollectorSyncFailed`) have links to Github  runbooks. The runbooks help users to understand debug these alerts. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2001409[*BZ#2001409*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2001409[Bugzilla:2001409]) | Missing docs contact | Done | link:https://bugzilla.redhat.com/show_bug.cgi?id=2001409[]

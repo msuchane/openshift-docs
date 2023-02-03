@@ -14,7 +14,7 @@ include::manual-sections/making-open-source-more-inclusive.adoc[leveloffset=+1]
 
 include::manual-sections/proc_providing-feedback-on-red-hat-documentation.adoc[leveloffset=+1]
 
-include::{generated-dir}/ref_new-features.adoc[leveloffset=+1]
+include::{generated-dir}/assembly_new-features.adoc[leveloffset=+1]
 
 include::{generated-dir}/ref_bug-fixes.adoc[leveloffset=+1]
 

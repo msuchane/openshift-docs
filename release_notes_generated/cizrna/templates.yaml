@@ -1,104 +1,63 @@
 sections:
+  - &rhcos
+    title: "Red Hat Enterprise Linux CoreOS (RHCOS)"
+    filter:
+      component: ["RHCOS"]
   - &installer
-    title: "Installer and image creation"
+    title: "Installation and upgrade"
     filter:
-      subsystem: ['ssg_front_door','sst_front_door','sst_installer','sst_image_builder','sst_composer']
-  - &edge
-    title: "RHEL for Edge"
+      component: ["Installer"]
+  - &web_console
+    title: "Web console"
     filter:
-      subsystem: ['sst_edge', 'sst_rhcos']
-  - &subscription
-    title: "Subscription management"
+      component: ["Management Console"]
+  - &oc
+    title: "OpenShift CLI (oc)"
     filter:
-      subsystem: ["sst_subscription_manager"]
-  - &software
-    title: "Software management"
+      component: ["oc"]
+  - &images
+    title: "Images"
     filter:
-      subsystem: ["sst_cs_software_management"]
-  - &shells
-    title: "Shells and command-line tools"
-    filter:
-      subsystem: ['sst_cs_system_management', 'sst_cs_plumbers']
-  - &infrastructure
-    title: "Infrastructure services"
-    filter:
-      subsystem: ['sst_cs_infra_services', 'ssg_core_services']
-  - &security
-    title: "Security"
-    filter:
-      subsystem: ['sst_platform_security', 'sst_security_crypto', 'sst_security_readiness', 'sst_security_selinux', 'sst_security_compliance', 'sst_security_special_projects', 'ssg_security']
-  - &networking
-    title: "Networking"
-    filter:
-      subsystem: ['sst_networking']
-  - &kernel
-    title: "Kernel"
-    filter:
-      subsystem: ['sst_kernel_maintainers', 'sst_kernel_generalists', 'sst_kernel_ft', 'sst_kexec_kdump', 'sst_kernel_trace', 'sst_kernel_tps', 'sst_kernel_debug', 'sst_kernel_sustaining', 'sst_core_kernel', 'sst_kernel_realtime', 'sst_kernel_rats', 'sst_kernel_rts', 'sst_kernel_security', 'sst_arch_hw', 'sst_nic_rdma']
-  - &boot
-    title: "Boot loader"
-    filter:
-      subsystem: ['sst_desktop_firmware_bootloaders']
-  - &hardware
-    title: "Hardware enablement"
-    filter:
-      subsystem: ['sst_platform_enablement']
+      component: ["Image Registry"]
   - &storage
-    title: "File systems and storage"
+    title: "Storage"
     filter:
-      subsystem: ['sst_platform_storage', 'sst_filesystems', 'ssg_filesystems_and_storage', 'sst_storage_management', 'sst_logical_storage', 'sst_storage_io']
-  - &clusters
-    title: "High availability and clusters"
+      component: ["Storage"]
+  - &olm
+    title: "Operator lifecycle"
     filter:
-      subsystem: ['sst_high_availability']
-  - &languages
-    title: "Dynamic programming languages, web and database servers"
+      component: ["OLM"]
+  - &sdk
+    title: "Operator development"
     filter:
-      subsystem: ['sst_cs_apps', 'sst_cs_stacks']
-  - &compilers
-    title: "Compilers and development tools"
+      component: ["Operator SDK"]
+  - &mco
+    title: "Machine Config Operator"
     filter:
-      subsystem: ['sst_platform_tools', 'ssg_platform_tools', 'sst_pt_gcc_glibc', 'sst_pt_perf_debug', 'sst_pt_llvm_rust_go', 'sst_pt_pcp', 'sst_dotnet_java']
-  - &idm
-    title: "Identity Management"
+      component: ["Machine Config Operator"]
+  - &nodes
+    title: "Nodes"
     filter:
-      subsystem: ['sst_identity_management', 'ssg_idm', 'sst_idm_ipa', 'sst_idm_sssd', 'sst_idm_ds', 'sst_idm_cs', 'sst_idm_ocp', 'sst_idm_ops']
-  - &sssd
-    title: "SSSD"
+      component: ["Node"]
+  - &monitoring
+    title: "Monitoring"
     filter:
-      subsystem: ['sst_sssd']
-  - &desktop
-    title: "Desktop"
+      component: ["Monitoring"]
+  - &rest
+    title: "Other components"
+    intro_abstract: "I didn't know how exactly to sort these."
     filter:
-      subsystem: ['sst_desktop', 'sst_desktop_applications', 'sst_desktop_platform_technologies', 'sst_i18n']
-  - &graphics
-    title: "Graphics infrastructures"
-    filter:
-      subsystem: ['sst_gpu', 'sst_graphics_infrastructure']
-  - &cockpit
-    title: "The web console"
-    filter:
-      subsystem: ['sst_cockpit']
-  - &system_roles
-    title: "Red Hat Enterprise Linux System Roles"
-    filter:
-      subsystem: ['sst_system_roles', 'sst_sap']
-  - &virtualization
-    title: "Virtualization"
-    filter:
-      subsystem: ['sst_virtualization', 'ssg_virtualization', 'sst_virtualization_advanced', 'sst_virtualization_windows', 'sst_virtualization_networking','sst_virtualization_spice', 'sst_virtualization_storage', 'sst_virtualization_hwe']
-  - &cloud
-    title: "RHEL in cloud environments"
-    filter:
-      subsystem: ['sst_virtualization_cloud']
-  - &supportability
-    title: "Supportability"
-    filter:
-      subsystem: ['sst_cee_supportability']
-  - &containers
-    title: "Containers"
-    filter:
-      subsystem: ['sst_container_tools']
+      component:
+        - Build
+        - CNF Platform Validation
+        - Cloud Compute
+        - Compliance Operator
+        - Dev Console
+        - File Integrity Operator
+        - Windows Containers
+        - apiserver-auth
+        - kube-controller-manager
+        - kube-scheduler
 
 
 chapters:
@@ -106,6 +65,19 @@ chapters:
     intro_abstract: "This part describes new features and major enhancements introduced in {ProductName}{nbsp}{ProductNumber}."
     filter:
       doc_type: ["Enhancement", "Release Note"]
+    sections:
+      - *rhcos
+      - *installer
+      - *web_console
+      - *oc
+      - *images
+      - *storage
+      - *olm
+      - *sdk
+      - *mco
+      - *nodes
+      - *monitoring
+      - *rest
   - title: "Bug fixes"
     intro_abstract: "This part describes bugs fixed in {ProductName}{nbsp}{ProductNumber} that have a significant impact on users."
     filter:

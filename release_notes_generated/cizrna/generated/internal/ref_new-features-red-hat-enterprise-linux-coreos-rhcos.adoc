@@ -1,0 +1,10 @@
+[id="new-features-red-hat-enterprise-linux-coreos-rhcos"]
+= Red Hat Enterprise Linux CoreOS (RHCOS)
+
+
+
+
+[id="BZ-2049591"]
+* With this update, running the `toolbox` command now checks for updates to the default image before launching the container. This improves security and provides users with the latest bug fixes. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2049591[*BZ#2049591*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2049591[Bugzilla:2049591]) | Missing docs contact | Done | link:https://bugzilla.redhat.com/show_bug.cgi?id=2049591[]

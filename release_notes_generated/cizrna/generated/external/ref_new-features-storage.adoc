@@ -1,0 +1,12 @@
+[id="new-features-storage"]
+= Storage
+
+
+
+
+[id="BZ-2080449"]
+* Users can now opt into using the experimental VHD feature on Azure File. To opt in, users must specify the `fstype` parameter in a storage class and enable it with `--enable-vhd=true`. If `fstype` is used and the feature is not set to `true`, the volumes will fail to provision. 
++
+To opt out of using the VHD feature, remove the `fstype` parameter from your storage class. (link:https://bugzilla.redhat.com/show_bug.cgi?id=2080449[*BZ#2080449*])
+
+(link:https://bugzilla.redhat.com/show_bug.cgi?id=2080449[Bugzilla:2080449]) 

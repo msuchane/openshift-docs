@@ -1,0 +1,11 @@
+[id="new-features"]
+= New features
+
+This part describes new features and major enhancements introduced in {ProductName}{nbsp}{ProductNumber}.
+
+
+include::ref_new-features-red-hat-enterprise-linux-coreos-rhcos.adoc[leveloffset=+1]
+
+include::ref_new-features-storage.adoc[leveloffset=+1]
+
+include::ref_new-features-other-components.adoc[leveloffset=+1]
