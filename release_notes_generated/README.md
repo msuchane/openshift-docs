@@ -4,25 +4,25 @@ This directory provides a complete demo of a release notes documentation project
 
 ## Layout
 
-* The [master_template.adoc]() file is the main AsciiDoc file. It includes both generated and manually written content.
+* The [master_template.adoc](master_template.adoc) file is the main AsciiDoc file. It includes both generated and manually written content.
 
-* The [master_internal.adoc]() and [master_external.adoc]() files are wrappers around [master_template.adoc](). They enable you to select between an internal preview and a public version of the documentation.
+* The [master_internal.adoc](master_internal.adoc) and [master_external.adoc](master_external.adoc) files are wrappers around [master_template.adoc](master_template.adoc). They enable you to select between an internal preview and a public version of the documentation.
 
-* The [manual-sections]() directory contains manually written AsciiDoc content that you can include from the main file.
+* The [manual-sections](manual-sections) directory contains manually written AsciiDoc content that you can include from the main file.
 
-* The [cizrna]() directory contains generator configuration files and generated AsciiDoc content that you can include from the main file:
+* The [cizrna/](cizrna/) directory contains generator configuration files and generated AsciiDoc content that you can include from the main file:
 
-    * [cizrna/tickets.yaml]() lists the tickets and ticket queries that populate your release notes.
+    * [cizrna/tickets.yaml](cizrna/tickets.yaml) lists the tickets and ticket queries that populate your release notes.
 
-    * [cizrna/tracker.yaml]() configures access to your Bugzilla and Jira instance.
+    * [cizrna/tracker.yaml](cizrna/tracker.yaml) configures access to your Bugzilla and Jira instance.
 
-    * [cizrna/templates.yaml]() configures how your tickets are sorted into sections of the document.
+    * [cizrna/templates.yaml](cizrna/templates.yaml) configures how your tickets are sorted into sections of the document.
 
-    * [cizrna/generated/internal/]() and [cizrna/generated/internal/]() store the generated assemblies and modules.
+    * [cizrna/generated/internal/](cizrna/generated/internal/) and [cizrna/generated/internal/](cizrna/generated/internal/) store the generated assemblies and modules.
 
 ## Generating the release notes
 
-1. Install the Cizrna tool. See [https://msuchane.github.io/cizrna/#_installing_cizrna]().
+1. Install the Cizrna tool. See [https://msuchane.github.io/cizrna/#_installing_cizrna](https://msuchane.github.io/cizrna/#_installing_cizrna).
 
 2. Navigate to this directory.
 
