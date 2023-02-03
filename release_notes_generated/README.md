@@ -39,7 +39,7 @@ This directory provides a complete demo of a release notes documentation project
     $ cizrna build
     ```
 
-5. Build a preview of the internal and external document:
+5. Build previews of the internal and external document:
 
     ```bash
     $ asciidoctor --safe -vn master_internal.adoc
