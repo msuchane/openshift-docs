@@ -1,22 +1,55 @@
 bugzilla:
   host: "https://bugzilla.redhat.com"
   fields:
-    doc_type: "cf_doc_type"
-    doc_text: "cf_release_notes"
-    doc_text_status: "requires_doc_text"
-    # Standard field
-    docs_contact: ""
-    target_release: "cf_internal_target_release"
-    subsystems: "pool"
+    doc_type:
+      - "cf_doc_type"
+    doc_text:
+      - "cf_release_notes"
+    doc_text_status:
+      - "requires_doc_text"
+    target_release:
+      - "cf_internal_target_release"
+    subsystems:
+      - "pool"
 
 jira:
   host: "https://issues.redhat.com"
   fields:
-    doc_type: "customfield_12317310"
-    doc_text: "customfield_12317322"
-    doc_text_status: "customfield_12317337"
-    docs_contact: "customfield_12317336"
-    # Standard field
-    target_release: ""
+    doc_type:
+      - "customfield_12317310" # Release Note Type field
+      # RHELPLAN
+      - "customfield_12317310"
+      # RHEL
+      - "customfield_12320850"
+
+    doc_text:
+      - "customfield_12320850" # Release Note field
+      # RHELPLAN
+      - "customfield_12317322"
+      # RHEL
+      - "customfield_12310211"
+
+    doc_text_status:
+      - "customfield_12310213" # Release Note Status field
+      # RHELPLAN
+      - "customfield_12317337"
+      # RHEL
+      - "customfield_12310213"
+
+    docs_contact:
+      - "customfield_12317336"
+      # RHELPLAN
+      - "customfield_12317336"
+      # RHEL
+      - "customfield_12317360"
+
     # Not used in OpenShift docs
-    subsystems: ""
+    subsystems:
+      # RHELPLAN
+      - "customfield_12317259"
+      # RHEL
+      - "customfield_12317259"
+
+    target_release:
+      - "customfield_12319940" # Fix Target Version
+
