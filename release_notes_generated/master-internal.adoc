@@ -1,0 +1,3 @@
+:generated-dir: acorns/generated/internal
+
+include::master-template.adoc[]

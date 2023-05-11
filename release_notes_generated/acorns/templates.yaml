@@ -65,7 +65,7 @@ chapters:
     intro_abstract: "This part describes new features and major enhancements introduced in {ProductName}{nbsp}{ProductNumber}."
     filter:
       doc_type: ["Enhancement", "Release Note"]
-    sections:
+    subsections:
       - *rhcos
       - *installer
       - *web_console
@@ -82,7 +82,7 @@ chapters:
     intro_abstract: "This part describes bugs fixed in {ProductName}{nbsp}{ProductNumber} that have a significant impact on users."
     filter:
       doc_type: ["Bug Fix"]
-    sections:
+    subsections:
       - *rhcos
       - *installer
       - *web_console
@@ -102,7 +102,7 @@ chapters:
       For information on Red Hat scope of support for Technology Preview features, see link:https://access.redhat.com/support/offerings/techpreview/[Technology Preview Features Support Scope].
     filter:
       doc_type: ["Technology Preview"]
-    sections:
+    subsections:
       - *rhcos
       - *installer
       - *web_console
@@ -122,7 +122,7 @@ chapters:
        Deprecated functionality will likely not be supported in future major releases of this product and is not recommended for new deployments. For the most recent list of deprecated functionality within a particular major release, refer to the latest version of release documentation.
     filter:
       doc_type: ["Deprecated Functionality"]
-    sections:
+    subsections:
       - *rhcos
       - *installer
       - *web_console
@@ -139,7 +139,7 @@ chapters:
     intro_abstract: "This part describes known issues in {ProductName}{nbsp}{ProductNumber}."
     filter:
       doc_type: ["Known Issue"]
-    sections:
+    subsections:
       - *rhcos
       - *installer
       - *web_console

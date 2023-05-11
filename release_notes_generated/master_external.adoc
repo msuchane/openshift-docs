@@ -1,3 +1,0 @@
-:generated-dir: cizrna/generated/external
-
-include::master_template.adoc[]
